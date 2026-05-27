@@ -14,7 +14,7 @@ SPOTS = [
         "seasons": ["夏", "秋"],
         "desc": "幕末に築造された星型の西洋式城郭・五稜郭と、日本三大夜景に数えられる函館山の夜景が有名。元町の異国情緒ある洋館街と函館朝市の海鮮丼も定番です。",
         "highlights": ["星型要塞・五稜郭", "函館山夜景", "元町洋館街", "函館朝市"],
-        "links": [{"label": "函館市観光情報", "url": "https://www.hakodatejin.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "函館市観光情報", "url": "https://www.hakodatejin.com/"}],
     },
     {
         "name": "富良野・美瑛のラベンダー畑",
@@ -24,7 +24,7 @@ SPOTS = [
         "seasons": ["夏"],
         "desc": "7〜8月はラベンダーが一面に広がる丘が圧巻。パッチワークの丘と呼ばれる美瑛の農村風景はドライブやサイクリングの名所で、青い池も必見です。",
         "highlights": ["ラベンダー畑", "青い池（美瑛）", "パッチワークの丘", "ファーム富田"],
-        "links": [{"label": "北海道観光公式", "url": "https://www.visit-hokkaido.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "北海道観光公式", "url": "https://www.visit-hokkaido.jp/"}],
     },
     {
         "name": "知床五湖・羅臼",
@@ -34,7 +34,7 @@ SPOTS = [
         "seasons": ["夏", "秋"],
         "desc": "ユネスコ世界自然遺産の知床半島。五湖を巡る高架木道ではヒグマに出会えることも。羅臼では流氷クルーズやホエールウォッチングが体験できます。",
         "highlights": ["知床五湖高架木道", "ヒグマ観察", "流氷クルーズ", "カムイワッカ湯の滝"],
-        "links": [{"label": "知床観光公式", "url": "https://www.shiretoko.asia/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "知床観光公式", "url": "https://www.shiretoko.asia/"}],
     },
     {
         "name": "小樽運河・余市蒸溜所",
@@ -44,7 +44,7 @@ SPOTS = [
         "seasons": ["春", "夏", "冬"],
         "desc": "石造り倉庫が立ち並ぶ小樽運河は北海道屈指のフォトスポット。新鮮な寿司・海鮮丼も絶品で、余市ではニッカウヰスキー蒸溜所見学が楽しめます。",
         "highlights": ["小樽運河", "寿司・海鮮丼", "ニッカウヰスキー余市蒸溜所", "堺町通り"],
-        "links": [{"label": "小樽観光協会", "url": "https://otaru.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "小樽観光協会", "url": "https://otaru.gr.jp/"}],
     },
     {
         "name": "登別温泉・洞爺湖",
@@ -54,7 +54,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "9種の泉質が湧く「温泉のデパート」登別。地獄谷の迫力は圧倒的で、近隣の洞爺湖は支笏洞爺国立公園内の美しいカルデラ湖。有珠山ロープウェイも人気。",
         "highlights": ["地獄谷", "9種の泉質", "洞爺湖サイロ展望台", "有珠山ロープウェイ"],
-        "links": [{"label": "登別温泉観光", "url": "https://www.noboribetsu-spa.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "登別温泉観光", "url": "https://www.noboribetsu-spa.jp/"}],
     },
     {
         "name": "札幌・大通公園・すすきの",
@@ -64,7 +64,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "道都・札幌は北海道の玄関口。大通公園のビアガーデン（夏）や雪まつり（冬）が有名。すすきのの夜グルメ、円山動物園、羊ヶ丘展望台も定番です。",
         "highlights": ["大通公園", "札幌雪まつり（2月）", "すすきの夜グルメ", "羊ヶ丘展望台", "味噌ラーメン"],
-        "links": [{"label": "札幌観光公式", "url": "https://www.sapporo.travel/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "札幌観光公式", "url": "https://www.sapporo.travel/"}],
     },
     {
         "name": "釧路湿原・阿寒湖",
@@ -74,7 +74,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "日本最大の湿原・釧路湿原は国立公園で、タンチョウヅルが生息する神秘的な大地。阿寒湖ではマリモの観察や湖上クルーズ、アイヌ文化体験が楽しめます。",
         "highlights": ["釧路湿原カヌー", "タンチョウヅル", "阿寒湖マリモ", "アイヌ文化体験"],
-        "links": [{"label": "釧路観光", "url": "https://www.kushiro-kankou.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8C%97%E6%B5%B7%E9%81%93", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "釧路観光", "url": "https://www.kushiro-kankou.or.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -88,7 +88,7 @@ SPOTS = [
         "seasons": ["春"],
         "desc": "日本屈指の桜の名所。現存12天守のひとつで、春には約2600本のソメイヨシノが濠を覆う「花筏」が絶景。津軽三味線とりんごの産地としても名高い。",
         "highlights": ["現存天守", "花筏（桜×濠）", "津軽三味線", "りんご街道"],
-        "links": [{"label": "弘前市観光情報", "url": "https://www.hirosaki-kanko.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%9D%92%E6%A3%AE%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "弘前市観光情報", "url": "https://www.hirosaki-kanko.or.jp/"}],
     },
     {
         "name": "青森ねぶた祭・青森市街",
@@ -98,7 +98,7 @@ SPOTS = [
         "seasons": ["夏"],
         "desc": "毎年8月に開催される日本三大祭のひとつ・青森ねぶた祭は巨大灯籠と跳ね人の熱狂が圧巻。青森魚菜センターの「のっけ丼」や棟方志功記念館も必訪。",
         "highlights": ["ねぶた祭（8月）", "ねぶたの家ワ・ラッセ", "のっけ丼", "棟方志功記念館"],
-        "links": [{"label": "青森観光情報", "url": "https://www.aomori-tourism.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%9D%92%E6%A3%AE%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "青森観光情報", "url": "https://www.aomori-tourism.com/"}],
     },
     {
         "name": "奥入瀬渓流・十和田湖",
@@ -108,7 +108,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "14kmにわたる渓流沿いの遊歩道は新緑・紅葉ともに絶景。水量豊富な滝が連続し、十和田湖の神秘的な青さとセットで楽しむ自然旅の定番です。",
         "highlights": ["銚子大滝", "渓流沿い遊歩道", "十和田湖遊覧船", "秋の紅葉"],
-        "links": [{"label": "十和田観光", "url": "https://www.towada.travel/ja"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%9D%92%E6%A3%AE%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "十和田観光", "url": "https://www.towada.travel/ja"}],
     },
     {
         "name": "盛岡城跡・盛岡三大麺",
@@ -118,7 +118,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "南部藩の城下町・盛岡は石垣が美しい盛岡城跡公園が有名。わんこそば・じゃじゃ麺・盛岡冷麺の「盛岡三大麺」は必食で、石割桜も春の名物です。",
         "highlights": ["盛岡城跡（石割桜）", "わんこそば", "じゃじゃ麺", "盛岡冷麺"],
-        "links": [{"label": "盛岡観光", "url": "https://www.morioka-tourism.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%A9%E6%89%8B%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "盛岡観光", "url": "https://www.morioka-tourism.com/"}],
     },
     {
         "name": "平泉・中尊寺金色堂",
@@ -128,7 +128,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "奥州藤原氏が栄華を誇った平安時代の遺跡群がユネスコ世界文化遺産。金色堂は黄金に輝く傑作で、芭蕉も旅した毛越寺の浄土庭園も静寂の美があります。",
         "highlights": ["中尊寺金色堂", "毛越寺浄土庭園", "芭蕉句碑"],
-        "links": [{"label": "平泉観光公式", "url": "https://hiraizumi.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%A9%E6%89%8B%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "平泉観光公式", "url": "https://hiraizumi.or.jp/"}],
     },
     {
         "name": "三陸海岸・浄土ヶ浜",
@@ -138,7 +138,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "「日本のここに来てよかった」第1位にも選ばれた三陸海岸の絶景が続くリアス式海岸。浄土ヶ浜の白い岩肌と碧い海は圧巻で、三陸海鮮（ウニ・アワビ）も絶品です。",
         "highlights": ["浄土ヶ浜", "三陸海鮮（ウニ・アワビ）", "碁石海岸", "三陸鉄道リアス線"],
-        "links": [{"label": "岩手観光", "url": "https://www.iwatetabi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%A9%E6%89%8B%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "岩手観光", "url": "https://www.iwatetabi.jp/"}],
     },
     {
         "name": "仙台・松島",
@@ -148,7 +148,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "日本三景のひとつ松島は大小約260の島が点在する多島美の絶景地。仙台では牛タンが必食で、仙台城跡からの眺望も人気スポットです。",
         "highlights": ["日本三景・松島", "遊覧船", "牡蠣・穴子丼", "仙台牛タン", "瑞巌寺"],
-        "links": [{"label": "松島観光協会", "url": "https://www.matsushima-kanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%AE%AE%E5%9F%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "松島観光協会", "url": "https://www.matsushima-kanko.com/"}],
     },
     {
         "name": "鳴子温泉郷・鳴子峡",
@@ -158,7 +158,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "奥羽山脈麓に広がる鳴子温泉は5系統の泉質が湧く東北屈指の温泉郷。秋の鳴子峡は紅葉の名所として知られ、こけしの産地としても全国に名を馳せています。",
         "highlights": ["鳴子峡の紅葉", "5系統の泉質", "こけし工芸", "鳴子ダム"],
-        "links": [{"label": "鳴子温泉観光", "url": "https://www.naruko.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%AE%AE%E5%9F%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "鳴子温泉観光", "url": "https://www.naruko.gr.jp/"}],
     },
     {
         "name": "秋田竿燈まつり・角館",
@@ -168,7 +168,7 @@ SPOTS = [
         "seasons": ["夏", "春"],
         "desc": "秋田市の竿燈まつり（8月）は稲穂に見立てた46個の提灯を操る圧巻の祭り。武家屋敷とシダレザクラで有名な角館はみちのくの小京都として知られます。",
         "highlights": ["竿燈まつり（8月）", "角館武家屋敷", "シダレザクラ", "きりたんぽ鍋"],
-        "links": [{"label": "秋田観光", "url": "https://akita-nairiku.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A7%8B%E7%94%B0%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "秋田観光", "url": "https://akita-nairiku.com/"}],
     },
     {
         "name": "男鹿半島・なまはげ",
@@ -178,7 +178,7 @@ SPOTS = [
         "seasons": ["冬", "春", "夏", "秋"],
         "desc": "「泣く子はいねが〜」の掛け声で有名な秋田の伝統行事・なまはげの発祥地。日本海に突き出した男鹿半島は断崖絶壁の景勝地で入道崎の灯台も絶景です。",
         "highlights": ["なまはげ館", "入道崎の夕日", "男鹿温泉郷", "ハタハタ料理"],
-        "links": [{"label": "男鹿市観光", "url": "https://oga-navi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A7%8B%E7%94%B0%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "男鹿市観光", "url": "https://oga-navi.jp/"}],
     },
     {
         "name": "山形・蔵王温泉・山寺",
@@ -188,7 +188,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "冬の樹氷（スノーモンスター）で有名な蔵王温泉と、芭蕉の句で名高い山寺（立石寺）が同じ山形市圏内に。1015段の石段の先の絶景と山形芋煮が待ちます。",
         "highlights": ["蔵王樹氷（冬）", "蔵王温泉大露天風呂", "山寺1015段", "山形芋煮"],
-        "links": [{"label": "山形観光", "url": "https://www.yamagatakanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B1%B1%E5%BD%A2%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "山形観光", "url": "https://www.yamagatakanko.com/"}],
     },
     {
         "name": "銀山温泉・出羽三山",
@@ -198,7 +198,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "大正ロマンあふれるガス灯と雪景色の銀山温泉は日本屈指のノスタルジックな温泉街。出羽三山（月山・羽黒山・湯殿山）は古くから続く修験道の聖地です。",
         "highlights": ["銀山温泉の雪景色", "羽黒山五重塔", "月山スキー（夏スキー）", "出羽三山神社"],
-        "links": [{"label": "山形観光", "url": "https://www.yamagatakanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B1%B1%E5%BD%A2%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "山形観光", "url": "https://www.yamagatakanko.com/"}],
     },
     {
         "name": "会津若松・鶴ヶ城・大内宿",
@@ -208,7 +208,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "戊辰戦争・白虎隊の悲話で知られる会津。鶴ヶ城の桜と七日町通りの大正浪漫な町並み、喜多方ラーメン、茅葺き宿場町・大内宿がセットで人気です。",
         "highlights": ["鶴ヶ城", "白虎隊記念館", "大内宿（茅葺き）", "七日町通り", "喜多方ラーメン"],
-        "links": [{"label": "会津若松観光", "url": "https://www.aizukanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A6%8F%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "会津若松観光", "url": "https://www.aizukanko.com/"}],
     },
     {
         "name": "磐梯山・猪苗代湖・五色沼",
@@ -218,7 +218,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "「会津富士」と呼ばれる磐梯山と日本4位の広さを誇る猪苗代湖は福島の象徴的な自然景観。野口英世の生家や五色沼自然探勝路も必訪です。",
         "highlights": ["磐梯山登山", "猪苗代湖", "五色沼自然探勝路", "野口英世記念館"],
-        "links": [{"label": "福島観光", "url": "https://fukushima-kanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A6%8F%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "福島観光", "url": "https://fukushima-kanko.com/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -232,7 +232,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本三名園のひとつ偕楽園は約3000本の梅が咲く2〜3月が絶景。日本三名瀑の袋田の滝は4段に落ちる豪快な姿が壮観で、冬の氷瀑も幻想的です。",
         "highlights": ["偕楽園の梅（2〜3月）", "袋田の滝", "冬の氷瀑", "納豆・あんこう鍋"],
-        "links": [{"label": "茨城観光", "url": "https://www.ibarakiguide.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E8%8C%A8%E5%9F%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "茨城観光", "url": "https://www.ibarakiguide.jp/"}],
     },
     {
         "name": "筑波山・つくば",
@@ -242,7 +242,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "百名山のひとつ・筑波山は関東平野を一望できる双耳峰で、ケーブルカーやロープウェイで気軽に登頂可能。春の梅まつり・秋の紫峰杉も見どころです。",
         "highlights": ["筑波山ケーブルカー", "関東平野の眺望", "梅まつり（2〜3月）", "ガマの油売り"],
-        "links": [{"label": "つくば観光", "url": "https://www.ttca.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E8%8C%A8%E5%9F%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "つくば観光", "url": "https://www.ttca.jp/"}],
     },
     {
         "name": "日光東照宮・中禅寺湖",
@@ -252,7 +252,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "徳川家康を祀る絢爛豪華な社殿群は世界遺産。奥日光の中禅寺湖と男体山、華厳の滝、竜頭の滝の紅葉は特に名高く、湯元温泉も人気です。",
         "highlights": ["世界遺産・陽明門", "華厳の滝", "中禅寺湖紅葉", "湯元温泉"],
-        "links": [{"label": "日光観光協会", "url": "https://www.nikko-kankou.org/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%A0%83%E6%9C%A8%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "日光観光協会", "url": "https://www.nikko-kankou.org/"}],
     },
     {
         "name": "那須高原・塩原温泉",
@@ -262,7 +262,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "関東からアクセスしやすい高原リゾート。那須岳登山やサイクリングが楽しめ、塩原温泉は渓谷沿いに温泉宿が並ぶ癒やしの地。宇都宮餃子も外せません。",
         "highlights": ["那須岳登山", "那須高原の牧場", "塩原温泉渓谷", "宇都宮餃子"],
-        "links": [{"label": "那須観光", "url": "https://www.nasu-kankou.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%A0%83%E6%9C%A8%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "那須観光", "url": "https://www.nasu-kankou.com/"}],
     },
     {
         "name": "足利フラワーパーク・佐野",
@@ -272,7 +272,7 @@ SPOTS = [
         "seasons": ["春"],
         "desc": "樹齢150年超の大藤が織りなす幻想的な紫のトンネル「あしかがフラワーパーク」は春（4〜5月）が圧巻。佐野名物のラーメンと佐野厄除け大師も近くにあります。",
         "highlights": ["大藤棚（4〜5月）", "フジのイルミネーション", "佐野ラーメン", "佐野厄除け大師"],
-        "links": [{"label": "あしかがフラワーパーク", "url": "https://www.ashikaga.co.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%A0%83%E6%9C%A8%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "あしかがフラワーパーク", "url": "https://www.ashikaga.co.jp/"}],
     },
     {
         "name": "草津温泉・尾瀬ヶ原",
@@ -282,7 +282,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "日本一の温泉と名高い草津温泉は湯畑を中心に硫黄の香りが漂う名湯。日本最大の高層湿原・尾瀬ヶ原は初夏の水芭蕉と秋の草紅葉が絶景です。",
         "highlights": ["草津湯畑", "時間湯体験", "尾瀬ヶ原の水芭蕉（6月）", "伊香保温泉"],
-        "links": [{"label": "草津温泉観光", "url": "https://www.kusatsu-onsen.ne.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%BE%A4%E9%A6%AC%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "草津温泉観光", "url": "https://www.kusatsu-onsen.ne.jp/"}],
     },
     {
         "name": "富岡製糸場・妙義山",
@@ -292,7 +292,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "明治5年創業の官営富岡製糸場はユネスコ世界遺産「富岡製糸場と絹産業遺産群」の中核。奇岩怪石が連なる妙義山は「上毛三山」のひとつで迫力の岩峰が続きます。",
         "highlights": ["富岡製糸場（世界遺産）", "妙義山ハイキング", "こんにゃく料理", "上州焼きまんじゅう"],
-        "links": [{"label": "富岡製糸場公式", "url": "https://www.tomioka-silk.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%BE%A4%E9%A6%AC%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "富岡製糸場公式", "url": "https://www.tomioka-silk.jp/"}],
     },
     {
         "name": "秩父・三峯神社・長瀞",
@@ -302,7 +302,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "関東随一のパワースポット・三峯神社は標高1100mに鎮座。長瀞の荒川ライン下りと岩畳は国の名勝・天然記念物。SL列車やわらじかつ丼も名物です。",
         "highlights": ["三峯神社", "長瀞ライン下り", "岩畳", "SL列車", "芝桜（4〜5月）"],
-        "links": [{"label": "秩父観光なび", "url": "https://www.chichibu.co.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%9F%BC%E7%8E%89%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "秩父観光なび", "url": "https://www.chichibu.co.jp/"}],
     },
     {
         "name": "川越・蔵造りの町並み",
@@ -312,7 +312,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "「小江戸」と呼ばれる川越は黒漆喰の蔵造り建築が立ち並ぶ城下町。時の鐘・菓子屋横丁でのさつまいもスイーツ食べ歩きと川越城本丸御殿が必訪スポット。",
         "highlights": ["蔵造りの町並み", "時の鐘", "菓子屋横丁", "さつまいもスイーツ", "川越城本丸御殿"],
-        "links": [{"label": "川越観光", "url": "https://www.koedo.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%9F%BC%E7%8E%89%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "川越観光", "url": "https://www.koedo.or.jp/"}],
     },
     {
         "name": "成田山・九十九里浜",
@@ -322,7 +322,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "成田山新勝寺は年間1000万人超が訪れる関東屈指の名刹で表参道の鰻料理も名物。九十九里浜の雄大な太平洋と銚子の海鮮も千葉観光の定番コースです。",
         "highlights": ["成田山新勝寺", "表参道の鰻", "九十九里浜", "銚子海鮮"],
-        "links": [{"label": "成田観光", "url": "https://www.city.narita.chiba.jp/kanko/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8D%83%E8%91%89%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "成田観光", "url": "https://www.city.narita.chiba.jp/kanko/"}],
     },
     {
         "name": "館山・南房総",
@@ -332,7 +332,7 @@ SPOTS = [
         "seasons": ["春", "夏"],
         "desc": "房総半島の最南端・館山は温暖な気候で花の産地として有名。春には菜の花・ポピー・ビオラなど色とりどりの花畑が広がり、海水浴や磯釣りも楽しめます。",
         "highlights": ["館山城と城山公園", "花摘み体験", "鴨川シーワールド", "海鮮・伊勢海老"],
-        "links": [{"label": "南房総観光", "url": "https://www.kankou.minamiboso.chiba.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%8D%83%E8%91%89%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "南房総観光", "url": "https://www.kankou.minamiboso.chiba.jp/"}],
     },
     {
         "name": "鎌倉・江ノ島",
@@ -342,7 +342,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "鎌倉幕府の中心地として栄えた古都。高徳院の大仏・鶴岡八幡宮・あじさい寺が有名。江ノ電に乗り江ノ島の海鮮や夕景を楽しむコースは定番です。",
         "highlights": ["鎌倉大仏", "江ノ電", "江ノ島", "あじさい（6月）", "鶴岡八幡宮"],
-        "links": [{"label": "鎌倉観光公式", "url": "https://www.kamakura-info.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "鎌倉観光公式", "url": "https://www.kamakura-info.jp/"}],
     },
     {
         "name": "箱根・芦ノ湖・大涌谷",
@@ -352,7 +352,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "富士山を望む芦ノ湖と多彩な温泉が魅力の関東屈指のリゾート地。大涌谷の黒たまご、ロープウェイ、箱根登山鉄道と乗り物も豊富です。",
         "highlights": ["芦ノ湖から富士山", "大涌谷・黒たまご", "箱根登山鉄道", "温泉旅館"],
-        "links": [{"label": "箱根ナビ", "url": "https://www.hakonenavi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "箱根ナビ", "url": "https://www.hakonenavi.jp/"}],
     },
     {
         "name": "横浜・みなとみらい",
@@ -362,7 +362,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "日本最大の港湾都市・横浜。みなとみらいの観覧車・夜景・赤レンガ倉庫、中華街の食べ歩き、山手の洋館、横浜スタジアムと見どころが満載です。",
         "highlights": ["みなとみらい夜景", "中華街食べ歩き", "赤レンガ倉庫", "山手洋館", "横浜ラーメン"],
-        "links": [{"label": "横浜観光情報", "url": "https://www.welcome.city.yokohama.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "横浜観光情報", "url": "https://www.welcome.city.yokohama.jp/"}],
     },
     {
         "name": "浅草・上野・東京スカイツリー",
@@ -372,7 +372,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "雷門・仲見世通りの浅草は東京最古の下町文化が息づく観光の中心地。上野公園の桜・博物館群、東京スカイツリーからの絶景、築地の海鮮も外せません。",
         "highlights": ["浅草・雷門", "仲見世通り", "上野公園（桜）", "東京スカイツリー", "築地海鮮"],
-        "links": [{"label": "東京観光公式", "url": "https://www.gotokyo.org/jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%9D%B1%E4%BA%AC%E9%83%BD", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "東京観光公式", "url": "https://www.gotokyo.org/jp/"}],
     },
     {
         "name": "新宿・渋谷・お台場",
@@ -382,7 +382,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "渋谷スクランブル交差点の喧騒、新宿歌舞伎町の夜景、お台場のレインボーブリッジビューは東京の夜を彩る定番スポット。六本木ヒルズの展望台も人気。",
         "highlights": ["渋谷スクランブル交差点", "新宿夜景", "お台場・レインボーブリッジ", "六本木ヒルズ展望台"],
-        "links": [{"label": "東京観光公式", "url": "https://www.gotokyo.org/jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%9D%B1%E4%BA%AC%E9%83%BD", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "東京観光公式", "url": "https://www.gotokyo.org/jp/"}],
     },
     {
         "name": "明治神宮・表参道・原宿",
@@ -392,7 +392,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "70万平方メートルの鎮守の森に囲まれた明治神宮は都会のオアシス。隣接する表参道・原宿エリアはハイブランドとサブカルが交差する東京のトレンド発信地です。",
         "highlights": ["明治神宮の森", "表参道ヒルズ", "竹下通り", "代々木公園ピクニック"],
-        "links": [{"label": "明治神宮公式", "url": "https://www.meijijingu.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%9D%B1%E4%BA%AC%E9%83%BD", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "明治神宮公式", "url": "https://www.meijijingu.or.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -406,7 +406,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "日本一の米どころ・新潟の日本酒と越後の山海の幸が揃う。佐渡島は金山の世界遺産登録が注目され、トキの野生復帰でも有名。越後湯沢のスキーも人気。",
         "highlights": ["佐渡金山（世界遺産）", "トキの森公園", "へぎそば", "日本酒巡り", "越後湯沢スキー"],
-        "links": [{"label": "新潟観光", "url": "https://niigata-kankou.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%96%B0%E6%BD%9F%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "新潟観光", "url": "https://niigata-kankou.or.jp/"}],
     },
     {
         "name": "立山黒部アルペンルート",
@@ -416,7 +416,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "雪の大谷ウォーク（4〜5月）で有名な立山黒部アルペンルートは標高3000m級の絶景コース。黒部ダムの迫力と富山湾の白えびやホタルイカも魅力です。",
         "highlights": ["雪の大谷（4〜5月）", "黒部ダム", "立山室堂", "白えび・ホタルイカ"],
-        "links": [{"label": "立山黒部アルペンルート", "url": "https://www.alpen-route.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%AF%8C%E5%B1%B1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "立山黒部アルペンルート", "url": "https://www.alpen-route.com/"}],
     },
     {
         "name": "金沢・兼六園・ひがし茶屋街",
@@ -426,7 +426,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "日本三名園のひとつ兼六園と近江町市場の海鮮が有名な「小京都」。ひがし茶屋街の石畳、21世紀美術館、加賀料理と見どころが豊富です。",
         "highlights": ["兼六園", "ひがし茶屋街", "近江町市場", "21世紀美術館", "加賀料理"],
-        "links": [{"label": "金沢観光公式", "url": "https://www.kanazawa-tourism.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%9F%B3%E5%B7%9D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "金沢観光公式", "url": "https://www.kanazawa-tourism.com/"}],
     },
     {
         "name": "永平寺・東尋坊・越前ガニ",
@@ -436,7 +436,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "曹洞宗の大本山・永平寺は深い杉木立の中に70棟以上の堂宇が並ぶ修行の聖地。日本海に面した東尋坊の断崖絶壁と越前ガニが福井観光の二大名物です。",
         "highlights": ["永平寺（修行の聖地）", "東尋坊の断崖", "越前ガニ（冬）", "恐竜博物館"],
-        "links": [{"label": "福井観光", "url": "https://www.fuku-e.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A6%8F%E4%BA%95%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "福井観光", "url": "https://www.fuku-e.com/"}],
     },
     {
         "name": "昇仙峡・武田神社",
@@ -446,7 +446,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "戦国武将・武田信玄ゆかりの武田神社と甲府城跡が有名。国の特別名勝・昇仙峡の奇岩と渓谷美は日本一とも称され、甲州ワインとほうとうも名物です。",
         "highlights": ["武田神社", "昇仙峡（日本一の渓谷美）", "甲州ワイン", "ほうとう"],
-        "links": [{"label": "山梨観光", "url": "https://www.yamanashi-kankou.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B1%B1%E6%A2%A8%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "山梨観光", "url": "https://www.yamanashi-kankou.jp/"}],
     },
     {
         "name": "富士山・富士五湖",
@@ -456,7 +456,7 @@ SPOTS = [
         "seasons": ["夏", "秋"],
         "desc": "日本最高峰・富士山は世界文化遺産。夏の登山シーズンはご来光が圧巻。河口湖・山中湖などの富士五湖エリアはリゾートやキャンプの拠点としても人気。",
         "highlights": ["富士山登山（7〜8月）", "ご来光", "河口湖", "忍野八海"],
-        "links": [{"label": "富士山オフィシャルサイト", "url": "https://www.fujisan-climb.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B1%B1%E6%A2%A8%E7%9C%8C%E3%83%BB%E9%9D%99%E5%B2%A1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "富士山オフィシャルサイト", "url": "https://www.fujisan-climb.jp/"}],
     },
     {
         "name": "熱海・伊豆・河津桜",
@@ -466,7 +466,7 @@ SPOTS = [
         "seasons": ["春", "夏", "冬"],
         "desc": "関東から最も近い温泉リゾートとして復権した熱海と、豊かな海と山の自然が広がる伊豆半島。河津桜（2月）、城ヶ崎海岸のつり橋、金目鯛が魅力です。",
         "highlights": ["熱海温泉", "河津桜（2月）", "城ヶ崎海岸", "西伊豆夕日", "金目鯛"],
-        "links": [{"label": "熱海観光協会", "url": "https://www.ataminews.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%9D%99%E5%B2%A1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "熱海観光協会", "url": "https://www.ataminews.gr.jp/"}],
     },
     {
         "name": "浜松・浜名湖・舘山寺",
@@ -476,7 +476,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "日本最大のウナギ養殖地帯として知られる浜名湖は釣り・ウォータースポーツの名所。浜松はやらまいか精神の地で、浜松餃子・うな重・浜名湖カキが名物です。",
         "highlights": ["浜名湖遊覧船", "うな重（養鰻発祥の地）", "浜松餃子", "舘山寺温泉", "浜松城"],
-        "links": [{"label": "浜松観光", "url": "https://www.hamamatsu-daisuki.net/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%9D%99%E5%B2%A1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "浜松観光", "url": "https://www.hamamatsu-daisuki.net/"}],
     },
     {
         "name": "名古屋城・熱田神宮・名古屋メシ",
@@ -486,7 +486,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "徳川家康生誕ゆかりの地・名古屋は独自のグルメ文化「名古屋メシ」が有名。金のしゃちほこの名古屋城、草薙の剣を祀る熱田神宮、ひつまぶし・手羽先は必体験。",
         "highlights": ["名古屋城・金のしゃちほこ", "熱田神宮", "ひつまぶし", "手羽先", "味噌カツ"],
-        "links": [{"label": "名古屋観光情報", "url": "https://www.nagoya-info.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%84%9B%E7%9F%A5%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "名古屋観光情報", "url": "https://www.nagoya-info.jp/"}],
     },
     {
         "name": "犬山城・明治村",
@@ -496,7 +496,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "木曽川河畔の断崖に建つ国宝・犬山城は現存天守の中で最古の建築様式。近隣の明治村は国の重要文化財・明治建築が60棟以上移築された野外博物館です。",
         "highlights": ["国宝・犬山城（現存最古）", "木曽川鵜飼（夏）", "博物館明治村", "名古屋コーチン"],
-        "links": [{"label": "犬山観光", "url": "https://inuyama.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%84%9B%E7%9F%A5%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "犬山観光", "url": "https://inuyama.gr.jp/"}],
     },
     {
         "name": "上高地・乗鞍岳",
@@ -506,7 +506,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "標高1500mのマイカー規制区域に広がる奥山の楽園。河童橋から望む穂高連峰と澄んだ梓川が絶景。大正池の早朝の霧幻景も幻想的で、ハイキングの聖地です。",
         "highlights": ["河童橋", "穂高連峰", "大正池", "高山植物"],
-        "links": [{"label": "上高地公式", "url": "https://www.kamikochi.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%95%B7%E9%87%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "上高地公式", "url": "https://www.kamikochi.or.jp/"}],
     },
     {
         "name": "松本城・善光寺",
@@ -516,7 +516,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "国宝・松本城は現存5重天守のひとつで黒と白のコントラストが美しい。長野市の善光寺は「一生に一度は善光寺詣り」と言われる無宗派の名刹で約1400年の歴史を持ちます。",
         "highlights": ["国宝・松本城", "善光寺お戒壇めぐり", "長野のそば", "おやき"],
-        "links": [{"label": "松本観光", "url": "https://visitmatsumoto.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%95%B7%E9%87%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "松本観光", "url": "https://visitmatsumoto.com/"}],
     },
     {
         "name": "白馬・北アルプス",
@@ -526,7 +526,7 @@ SPOTS = [
         "seasons": ["夏", "冬"],
         "desc": "北アルプスを望む白馬村は夏の登山・トレッキングと冬のスキーが有名な四季を通じた山岳リゾート。白馬八方尾根スキー場は長野五輪の会場にもなった名スキー場です。",
         "highlights": ["白馬三山（白馬岳・杓子岳・鑓ヶ岳）", "八方尾根スキー場", "栂池自然園", "白馬大雪渓"],
-        "links": [{"label": "白馬観光", "url": "https://www.vill.hakuba.lg.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%95%B7%E9%87%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "白馬観光", "url": "https://www.vill.hakuba.lg.jp/"}],
     },
     {
         "name": "飛騨高山・白川郷",
@@ -536,7 +536,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "「飛騨の小京都」高山の三町古い町並みと、ユネスコ世界遺産の合掌造り集落・白川郷は車で約1時間。冬の雪の白川郷は別格の美しさで、飛騨牛も絶品です。",
         "highlights": ["白川郷（世界遺産）", "高山古い町並み", "飛騨牛", "朴葉味噌", "陣屋朝市"],
-        "links": [{"label": "高山市観光", "url": "https://www.hida.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%90%E9%98%9C%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "高山市観光", "url": "https://www.hida.jp/"}],
     },
     {
         "name": "岐阜城・長良川鵜飼",
@@ -546,7 +546,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "信長・秀吉ゆかりの岐阜城は金華山山頂に建ち、ロープウェイで登れる。長良川の鵜飼は1300年以上の歴史を持つ宮内庁式部職の伝統漁法で夜の屋形船観覧が人気です。",
         "highlights": ["岐阜城（金華山）", "長良川鵜飼（5〜10月）", "岐阜提灯・和傘", "鮎料理"],
-        "links": [{"label": "岐阜市観光", "url": "https://www.gifucvb.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%90%E9%98%9C%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "岐阜市観光", "url": "https://www.gifucvb.or.jp/"}],
     },
     {
         "name": "伊勢神宮・鳥羽・志摩",
@@ -556,7 +556,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本人の心のふるさと・伊勢神宮（内宮・外宮）は年間800万人超が訪れる聖地。おはらい町の食べ歩き、鳥羽水族館、志摩のカキや伊勢海老も魅力です。",
         "highlights": ["伊勢神宮内宮", "おはらい町", "赤福", "伊勢海老・牡蠣", "鳥羽水族館"],
-        "links": [{"label": "伊勢市観光", "url": "https://www.kanko-ise.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%B8%89%E9%87%8D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "伊勢市観光", "url": "https://www.kanko-ise.jp/"}],
     },
     {
         "name": "松阪・伊賀上野",
@@ -566,7 +566,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "「松阪牛」発祥の地・松阪は江戸時代の豪商・三井家が育んだ商人の街。忍者の里・伊賀上野は松尾芭蕉生誕の地でもあり、上野城と伊賀流忍者博物館が人気です。",
         "highlights": ["松阪牛のすき焼き・焼肉", "伊賀流忍者博物館", "上野城", "松尾芭蕉生誕の地"],
-        "links": [{"label": "三重観光", "url": "https://www.kankomie.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%B8%89%E9%87%8D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "三重観光", "url": "https://www.kankomie.or.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -580,7 +580,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本最大の湖・琵琶湖は滋賀県の約1/6を占める大自然の宝庫。世界遺産の延暦寺がある比叡山、国宝・彦根城の桜、近江牛が県内の三大名物です。",
         "highlights": ["琵琶湖クルーズ", "比叡山延暦寺（世界遺産）", "彦根城の桜", "近江牛"],
-        "links": [{"label": "滋賀観光", "url": "https://biwako-visitors.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%BB%8B%E8%B3%80%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "滋賀観光", "url": "https://biwako-visitors.jp/"}],
     },
     {
         "name": "京都・嵐山・嵯峨野",
@@ -590,7 +590,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "渡月橋と嵐山の山並み、竹林の小径、天龍寺の庭園が凝縮した京都屈指の景勝地。トロッコ列車で保津川渓谷を下る体験も人気で、桜・紅葉は格別です。",
         "highlights": ["竹林の小径", "渡月橋", "天龍寺庭園", "トロッコ列車", "湯豆腐"],
-        "links": [{"label": "京都観光Navi", "url": "https://kyoto.travel/ja"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%BA%AC%E9%83%BD%E5%BA%9C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "京都観光Navi", "url": "https://kyoto.travel/ja"}],
     },
     {
         "name": "京都・東山・祇園",
@@ -600,7 +600,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "清水寺・八坂神社・二年坂・産寧坂が連なる京都観光の王道エリア。石畳の路地に舞妓・芸妓文化が息づく祇園の夜散策も格別。抹茶スイーツも充実。",
         "highlights": ["清水寺舞台", "産寧坂・二年坂", "八坂神社", "祇園白川", "京料理"],
-        "links": [{"label": "京都観光Navi", "url": "https://kyoto.travel/ja"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%BA%AC%E9%83%BD%E5%BA%9C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "京都観光Navi", "url": "https://kyoto.travel/ja"}],
     },
     {
         "name": "天橋立・伊根の舟屋",
@@ -610,7 +610,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本三景のひとつ天橋立は股のぞきで有名な砂浜の絶景。近くの伊根町では漁師の家の一階が直接海に面した「舟屋」が約230棟立ち並ぶ独特の漁村景観が広がります。",
         "highlights": ["天橋立の股のぞき", "笠松公園からの眺望", "伊根の舟屋（重要文化的景観）", "丹後の海鮮"],
-        "links": [{"label": "天橋立観光", "url": "https://www.amanohashidate.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%BA%AC%E9%83%BD%E5%BA%9C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "天橋立観光", "url": "https://www.amanohashidate.jp/"}],
     },
     {
         "name": "奈良・東大寺・春日大社",
@@ -620,7 +620,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "世界遺産に登録された古都奈良のシンボル、高さ15mの奈良の大仏（東大寺）と約1200頭の野生の鹿が共存する奈良公園は別格の体験。柿の葉寿司も名物。",
         "highlights": ["奈良の大仏", "奈良公園の鹿", "春日大社", "興福寺", "柿の葉寿司"],
-        "links": [{"label": "奈良観光公式", "url": "https://yamatoji.nara-kankou.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%A5%88%E8%89%AF%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "奈良観光公式", "url": "https://yamatoji.nara-kankou.or.jp/"}],
     },
     {
         "name": "吉野山・大峯奥駈道",
@@ -630,7 +630,7 @@ SPOTS = [
         "seasons": ["春"],
         "desc": "「一目千本」と称される約3万本の山桜が山全体を染める春の吉野山は日本一の桜の名所。世界遺産「紀伊山地の霊場と参詣道」の一部で葛（くず）料理も名物。",
         "highlights": ["吉野山の桜（4月）", "金峯山寺（世界遺産）", "大峯奥駈道", "葛もち・葛湯"],
-        "links": [{"label": "吉野観光", "url": "https://www.yoshinoyama-sakura.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%A5%88%E8%89%AF%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "吉野観光", "url": "https://www.yoshinoyama-sakura.jp/"}],
     },
     {
         "name": "高野山・和歌山城",
@@ -640,7 +640,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "空海が開いた真言密教の聖地・高野山は宿坊体験と奥の院の石廟群が圧巻。和歌山城の桜と「和歌山ラーメン」（醤油豚骨）も地元グルメとして人気です。",
         "highlights": ["高野山奥の院（世界遺産）", "宿坊体験", "和歌山城の桜", "和歌山ラーメン"],
-        "links": [{"label": "高野山観光", "url": "https://www.koyasan.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "高野山観光", "url": "https://www.koyasan.or.jp/"}],
     },
     {
         "name": "白浜温泉・アドベンチャーワールド",
@@ -650,7 +650,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "日本最古の温泉のひとつ・白浜温泉は崎の湯など開放感あふれる露天風呂が魅力。パンダ繁殖で有名なアドベンチャーワールドと南紀白浜の白砂ビーチが人気です。",
         "highlights": ["崎の湯（絶景露天風呂）", "アドベンチャーワールドのパンダ", "三段壁・千畳敷", "南紀白浜ビーチ"],
-        "links": [{"label": "白浜観光", "url": "https://www.nanki-shirahama.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "白浜観光", "url": "https://www.nanki-shirahama.com/"}],
     },
     {
         "name": "大阪・道頓堀・通天閣",
@@ -660,7 +660,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "「食い倒れの街」大阪のグルメと活気を体感できる道頓堀・なんば周辺。たこ焼き・串かつを食べ歩き、通天閣・大阪城・あべのハルカスも定番です。",
         "highlights": ["道頓堀グルメ", "たこ焼き・串かつ", "大阪城", "通天閣", "あべのハルカス"],
-        "links": [{"label": "大阪観光公式", "url": "https://osaka-info.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%A4%A7%E9%98%AA%E5%BA%9C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "大阪観光公式", "url": "https://osaka-info.jp/"}],
     },
     {
         "name": "万博記念公園・海遊館",
@@ -670,7 +670,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "1970年大阪万博の象徴・太陽の塔が今も屹立する万博記念公園は春の桜が見事。天保山の海遊館は世界最大級の水族館で、ジンベイザメと泳ぐ錯覚の展示が人気。",
         "highlights": ["太陽の塔（万博記念公園）", "海遊館のジンベイザメ", "天保山観覧車", "ユニバーサル・スタジオ・ジャパン（近隣）"],
-        "links": [{"label": "海遊館公式", "url": "https://www.kaiyukan.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%A4%A7%E9%98%AA%E5%BA%9C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "海遊館公式", "url": "https://www.kaiyukan.com/"}],
     },
     {
         "name": "神戸・北野・有馬温泉",
@@ -680,7 +680,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "異国情緒漂う北野異人館街と、日本最古の温泉地のひとつ有馬温泉が同じ神戸市内に。神戸牛・スイーツ・南京町グルメに加え、摩耶山掬星台の夜景も人気。",
         "highlights": ["北野異人館", "有馬温泉（金湯・銀湯）", "神戸牛", "南京町", "摩耶山夜景"],
-        "links": [{"label": "神戸観光公式", "url": "https://www.feel-kobe.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%85%B5%E5%BA%AB%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "神戸観光公式", "url": "https://www.feel-kobe.jp/"}],
     },
     {
         "name": "姫路城・書写山圓教寺",
@@ -690,7 +690,7 @@ SPOTS = [
         "seasons": ["春"],
         "desc": "「白鷺城」の美称を持つ日本最大の木造城郭でユネスコ世界遺産かつ国宝。桜との組み合わせは格別で、ラストサムライのロケ地・書写山圓教寺も近くにあります。",
         "highlights": ["白鷺城（世界遺産）", "現存天守", "春の桜", "書写山圓教寺"],
-        "links": [{"label": "姫路城公式", "url": "https://www.city.himeji.lg.jp/castle/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%85%B5%E5%BA%AB%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "姫路城公式", "url": "https://www.city.himeji.lg.jp/castle/"}],
     },
     {
         "name": "城崎温泉・竹田城跡",
@@ -700,7 +700,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "木造旅館が軒を連ねる情緒豊かな城崎温泉は浴衣で外湯めぐりが楽しめる名湯。近くの竹田城跡は「日本のマチュピチュ」と呼ばれ秋の雲海に浮かぶ光景が絶景です。",
         "highlights": ["城崎温泉 外湯めぐり（7湯）", "竹田城跡の雲海", "松葉ガニ（冬）", "コウノトリの郷"],
-        "links": [{"label": "城崎温泉観光", "url": "https://www.kinosaki-spa.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%85%B5%E5%BA%AB%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "城崎温泉観光", "url": "https://www.kinosaki-spa.gr.jp/"}],
     },
     {
         "name": "熊野古道・那智の滝",
@@ -710,7 +710,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "世界遺産「紀伊山地の霊場と参詣道」を構成する熊野古道。苔むす石畳の参道と日本一の落差・那智の滝（133m）は神秘的で、熊野三山巡りが人気です。",
         "highlights": ["熊野古道石畳", "那智の滝（133m）", "熊野三山巡り"],
-        "links": [{"label": "熊野古道", "url": "https://www.tb-kumano.jp/kumano-kodo/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "熊野古道", "url": "https://www.tb-kumano.jp/kumano-kodo/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -724,7 +724,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "日本最大の砂丘・鳥取砂丘は高さ47mの砂の大山脈。砂の美術館の精巧な砂像は世界屈指のレベル。らっきょうや松葉ガニも鳥取の名物です。",
         "highlights": ["鳥取砂丘", "砂の美術館", "ラクダ乗り体験", "松葉ガニ"],
-        "links": [{"label": "鳥取観光", "url": "https://www.tottori-tour.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B3%A5%E5%8F%96%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "鳥取観光", "url": "https://www.tottori-tour.jp/"}],
     },
     {
         "name": "大山・三朝温泉",
@@ -734,7 +734,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋", "冬"],
         "desc": "「伯耆富士」と呼ばれる中国地方最高峰・大山は春の新緑、夏のブナ林、秋の紅葉、冬のスキーと四季折々の絶景。三朝温泉はラドン含有量世界一の奇跡の名湯。",
         "highlights": ["大山登山", "大山スキー場", "三朝温泉（ラジウム泉）", "大山チーズ・大山牛乳"],
-        "links": [{"label": "鳥取観光", "url": "https://www.tottori-tour.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B3%A5%E5%8F%96%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "鳥取観光", "url": "https://www.tottori-tour.jp/"}],
     },
     {
         "name": "出雲大社・石見銀山",
@@ -744,7 +744,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "縁結びの神様・大国主大神を祀る出雲大社は日本最古の神社建築のひとつ。10月は全国の神様が集まる「神無月（出雲では神在月）」で特別なご縁が結べます。",
         "highlights": ["出雲大社（縁結び）", "神在月（10月）", "石見銀山（世界遺産）", "出雲そば・ぜんざい"],
-        "links": [{"label": "出雲観光", "url": "https://www.izumo-kankou.gr.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B3%B6%E6%A0%B9%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "出雲観光", "url": "https://www.izumo-kankou.gr.jp/"}],
     },
     {
         "name": "松江城・宍道湖・足立美術館",
@@ -754,7 +754,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "「水の都」松江は国宝・松江城と宍道湖の夕日が有名。安来市の足立美術館は米国庭園専門誌で20年以上日本一に選ばれた名庭園です。",
         "highlights": ["国宝・松江城", "宍道湖の夕日", "足立美術館の庭園", "出雲そば"],
-        "links": [{"label": "松江観光", "url": "https://www.kankou-matsue.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B3%B6%E6%A0%B9%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "松江観光", "url": "https://www.kankou-matsue.jp/"}],
     },
     {
         "name": "後楽園・岡山城・倉敷美観地区",
@@ -764,7 +764,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本三名園のひとつ後楽園と烏城（岡山城）が隣接する岡山市。倉敷美観地区は白壁土蔵と柳並木が江戸の商都の面影を残し、大原美術館も必訪です。",
         "highlights": ["後楽園（日本三名園）", "岡山城（烏城）", "倉敷美観地区", "大原美術館", "桃・マスカット"],
-        "links": [{"label": "岡山観光", "url": "https://www.okayama-kanko.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B2%A1%E5%B1%B1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "岡山観光", "url": "https://www.okayama-kanko.jp/"}],
     },
     {
         "name": "広島・宮島・厳島神社",
@@ -774,7 +774,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "世界遺産の厳島神社の海上大鳥居は日本屈指の絶景。平和記念公園・原爆ドームとセットで訪問する歴史旅が定番。もみじ饅頭と広島お好み焼きは必食です。",
         "highlights": ["海上大鳥居（世界遺産）", "原爆ドーム", "平和記念公園", "もみじ饅頭", "広島お好み焼き"],
-        "links": [{"label": "宮島観光協会", "url": "https://www.miyajima.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%BA%83%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "宮島観光協会", "url": "https://www.miyajima.or.jp/"}],
     },
     {
         "name": "尾道・しまなみ海道",
@@ -784,7 +784,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "坂道と寺社が入り組む映画の街・尾道は古くから文人墨客に愛された港町。全長約70kmのしまなみ海道サイクリングは島々を結ぶ橋と瀬戸内海の眺望が絶景です。",
         "highlights": ["しまなみ海道サイクリング", "尾道の坂道・猫の細道", "千光寺公園", "尾道ラーメン"],
-        "links": [{"label": "尾道観光", "url": "https://www.onomichi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%BA%83%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "尾道観光", "url": "https://www.onomichi.jp/"}],
     },
     {
         "name": "萩城下町・秋吉台",
@@ -794,7 +794,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "幕末の志士を多く輩出した萩は吉田松陰ゆかりの松陰神社と城下町が名高い。日本最大のカルスト台地・秋吉台と秋芳洞の地下鍾乳洞も圧巻です。",
         "highlights": ["萩城下町", "松陰神社・松下村塾", "秋吉台カルスト", "秋芳洞", "ふく（河豚）料理"],
-        "links": [{"label": "山口観光", "url": "https://yamaguchi-tourism.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%B1%B1%E5%8F%A3%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "山口観光", "url": "https://yamaguchi-tourism.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -808,7 +808,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "シラクチカズラで編まれた長さ45mの吊り橋・かずら橋は日本三奇橋のひとつ。剣山の麓に広がる秘境・祖谷渓谷は深い緑と清流が息をのむほど美しく、大歩危の川下りも人気です。",
         "highlights": ["かずら橋（日本三奇橋）", "祖谷渓谷", "大歩危・小歩危の川下り", "祖谷温泉"],
-        "links": [{"label": "徳島観光", "url": "https://www.awanavi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%BE%B3%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "徳島観光", "url": "https://www.awanavi.jp/"}],
     },
     {
         "name": "松山・今治・しまなみ海道（愛媛側）",
@@ -818,7 +818,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "四国と本州を結ぶしまなみ海道の愛媛側拠点・今治はタオルの産地として有名。今治城の水城跡と今治焼鳥・じゃこ天も名物。瀬戸内のサイクリングは爽快そのものです。",
         "highlights": ["今治城（水城）", "今治タオル", "しまなみ海道サイクリング（愛媛側）", "今治焼鳥"],
-        "links": [{"label": "今治観光", "url": "https://www.imabari-kanko.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%84%9B%E5%AA%9B%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "今治観光", "url": "https://www.imabari-kanko.com/"}],
     },
     {
         "name": "鳴門の渦潮・阿波踊り",
@@ -828,7 +828,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "世界最大級の渦潮が発生する鳴門海峡は渦の道の展望デッキから間近で見学可能。徳島市の阿波踊り（8月）は日本三大盆踊りのひとつで熱狂的な祭りです。",
         "highlights": ["鳴門の渦潮", "渦の道展望デッキ", "阿波踊り（8月）", "大歩危・かずら橋"],
-        "links": [{"label": "徳島観光", "url": "https://www.awanavi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%BE%B3%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "徳島観光", "url": "https://www.awanavi.jp/"}],
     },
     {
         "name": "こんぴらさん・栗林公園",
@@ -838,7 +838,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "海の神様・金刀比羅宮（785段の石段）と、特別名勝の大名庭園・栗林公園が讃岐の二大名所。讃岐うどんは全国から食通が集まるソウルフードです。",
         "highlights": ["785段の石段・こんぴらさん", "栗林公園（特別名勝）", "讃岐うどん", "直島アート"],
-        "links": [{"label": "香川観光", "url": "https://www.my-kagawa.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%A6%99%E5%B7%9D%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "香川観光", "url": "https://www.my-kagawa.jp/"}],
     },
     {
         "name": "道後温泉・松山城",
@@ -848,7 +848,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本最古の温泉のひとつ道後温泉本館は2024年に保存修理完了。夏目漱石「坊っちゃん」の舞台として有名で、松山城天守と鯛めし・蛇口みかんジュースが名物。",
         "highlights": ["道後温泉本館", "松山城", "鯛めし", "蛇口みかんジュース", "坊っちゃん列車"],
-        "links": [{"label": "道後温泉公式", "url": "https://dogo.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%84%9B%E5%AA%9B%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "道後温泉公式", "url": "https://dogo.jp/"}],
     },
     {
         "name": "高知・桂浜・四万十川",
@@ -858,7 +858,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "坂本龍馬ゆかりの地・桂浜は太平洋を望む豪快な海岸線。「最後の清流」四万十川では沈下橋と川の幸が楽しめます。カツオのたたきとひろめ市場は必体験。",
         "highlights": ["桂浜", "坂本龍馬記念館", "四万十川・沈下橋", "カツオのたたき", "ひろめ市場"],
-        "links": [{"label": "高知観光", "url": "https://www.attaka.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%AB%98%E7%9F%A5%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "高知観光", "url": "https://www.attaka.or.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -872,7 +872,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "九州の玄関口・博多は屋台グルメの聖地。学問の神様・太宰府天満宮は梅の名所で梅が枝餅が名物。水郷柳川の船下りも周辺の定番観光です。",
         "highlights": ["博多屋台", "博多ラーメン・もつ鍋", "太宰府天満宮", "梅が枝餅", "柳川船下り"],
-        "links": [{"label": "福岡観光公式", "url": "https://yokanavi.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A6%8F%E5%B2%A1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "福岡観光公式", "url": "https://yokanavi.com/"}],
     },
     {
         "name": "北九州・門司港レトロ",
@@ -882,7 +882,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "大正時代に貿易の拠点として栄えた門司港はレトロな赤レンガ建築が立ち並ぶ港町。焼きカレーが名物グルメで、関門海峡を一望する夜景も人気スポットです。",
         "highlights": ["旧門司三井倶楽部", "関門海峡・橋の夜景", "焼きカレー", "バナナの叩き売り発祥の地"],
-        "links": [{"label": "北九州観光", "url": "https://www.kitakyushu-tourism.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%A6%8F%E5%B2%A1%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "北九州観光", "url": "https://www.kitakyushu-tourism.com/"}],
     },
     {
         "name": "嬉野温泉・吉野ヶ里遺跡",
@@ -892,7 +892,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本三大美肌の湯・嬉野温泉と、国内最大規模の弥生時代の環濠集落遺跡・吉野ヶ里遺跡が佐賀観光の二本柱。有田焼のショッピングも人気です。",
         "highlights": ["嬉野温泉（美肌の湯）", "吉野ヶ里遺跡", "有田焼ショッピング", "佐賀牛"],
-        "links": [{"label": "佐賀観光", "url": "https://www.asobo-saga.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E4%BD%90%E8%B3%80%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "佐賀観光", "url": "https://www.asobo-saga.jp/"}],
     },
     {
         "name": "長崎・グラバー園・軍艦島",
@@ -902,7 +902,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "日本三大夜景の稲佐山、世界遺産の軍艦島クルーズ、グラバー園の洋館群が揃う港町。出島など鎖国時代の痕跡も多く、ちゃんぽん・皿うどん・カステラも名物。",
         "highlights": ["軍艦島クルーズ", "稲佐山夜景", "グラバー園", "出島", "ちゃんぽん・カステラ"],
-        "links": [{"label": "長崎観光公式", "url": "https://www.nagasaki-tabinet.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%95%B7%E5%B4%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "長崎観光公式", "url": "https://www.nagasaki-tabinet.com/"}],
     },
     {
         "name": "熊本城・阿蘇山",
@@ -912,7 +912,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "加藤清正が築いた難攻不落の名城・熊本城は復興工事が進む中でも迫力十分。世界最大級カルデラの阿蘇山・草千里ヶ浜と馬刺し・あか牛が熊本の代名詞です。",
         "highlights": ["熊本城", "草千里ヶ浜", "中岳火口展望", "馬刺し・あか牛", "阿蘇神社"],
-        "links": [{"label": "熊本観光公式", "url": "https://kumanavi.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%86%8A%E6%9C%AC%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "熊本観光公式", "url": "https://kumanavi.com/"}],
     },
     {
         "name": "天草・五橋・崎津集落",
@@ -922,7 +922,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "五つの橋で結ばれた天草諸島は「天草五橋」のドライブが名物。世界遺産「長崎と天草地方の潜伏キリシタン関連遺産」の崎津集落と、イルカウォッチングが人気。",
         "highlights": ["天草五橋（サンセット）", "崎津集落（世界遺産）", "イルカウォッチング", "天草ちゃんぽん"],
-        "links": [{"label": "天草観光", "url": "https://www.t-island.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E7%86%8A%E6%9C%AC%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "天草観光", "url": "https://www.t-island.jp/"}],
     },
     {
         "name": "別府温泉・由布院",
@@ -932,7 +932,7 @@ SPOTS = [
         "seasons": ["春", "秋", "冬"],
         "desc": "日本最多の源泉数を誇る別府温泉は「地獄めぐり」が有名な世界有数の温泉地。由布岳を望む由布院は金鱗湖の朝霧と個性派カフェが人気の温泉リゾートです。",
         "highlights": ["別府地獄めぐり", "別府砂湯", "金鱗湖の朝霧", "由布岳登山", "関あじ・関さば"],
-        "links": [{"label": "別府観光", "url": "https://www.beppu-navi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%A4%A7%E5%88%86%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "別府観光", "url": "https://www.beppu-navi.jp/"}],
     },
     {
         "name": "高千穂峡・青島神社",
@@ -942,7 +942,7 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "神話の舞台・天岩戸神社と高千穂峡の真名井の滝は神秘的な絶景。宮崎市ではサーフィンや宮崎牛が楽しめ、日南海岸の青島神社と鬼の洗濯板も有名です。",
         "highlights": ["高千穂峡・真名井の滝", "天岩戸神社", "青島神社", "宮崎牛・チキン南蛮"],
-        "links": [{"label": "宮崎観光", "url": "https://www.kanko-miyazaki.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E5%AE%AE%E5%B4%8E%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "宮崎観光", "url": "https://www.kanko-miyazaki.jp/"}],
     },
     {
         "name": "桜島・指宿温泉・知覧",
@@ -952,7 +952,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "今も噴煙を上げる活火山・桜島は鹿児島市のシンボル。砂むし温泉が有名な指宿、知覧特攻平和会館、黒豚・芋焼酎が鹿児島観光の定番コースです。",
         "highlights": ["桜島展望・フェリー", "指宿砂むし温泉", "知覧特攻平和会館", "黒豚料理・芋焼酎"],
-        "links": [{"label": "鹿児島観光", "url": "https://www.kagoshima-kankou.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "鹿児島観光", "url": "https://www.kagoshima-kankou.com/"}],
     },
     {
         "name": "霧島温泉・霧島神宮",
@@ -962,7 +962,7 @@ SPOTS = [
         "seasons": ["春", "秋"],
         "desc": "天孫降臨の神話が残る霧島は坂本龍馬・お龍が日本初の新婚旅行をした地。霧島温泉郷の多彩な泉質と霧島神宮の荘厳な杉木立、えびの高原のトレッキングが人気。",
         "highlights": ["霧島神宮の杉並木", "えびの高原トレッキング", "霧島温泉郷（多彩な泉質）", "新燃岳展望"],
-        "links": [{"label": "霧島観光", "url": "https://www.kagoshima-kankou.com/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "霧島観光", "url": "https://www.kagoshima-kankou.com/"}],
     },
     {
         "name": "奄美大島",
@@ -972,7 +972,7 @@ SPOTS = [
         "seasons": ["春", "夏"],
         "desc": "2021年に世界自然遺産に登録された奄美大島は手つかずの亜熱帯の自然が広がる離島。アマミノクロウサギなど固有種が生息し、美しいサンゴ礁でのシュノーケリングが楽しめます。",
         "highlights": ["世界遺産の亜熱帯自然林", "アマミノクロウサギ観察", "珊瑚礁シュノーケリング", "奄美の鶏飯（けいはん）"],
-        "links": [{"label": "奄美観光", "url": "https://www.amami-tourism.org/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "奄美観光", "url": "https://www.amami-tourism.org/"}],
     },
     {
         "name": "屋久島・縄文杉",
@@ -982,7 +982,7 @@ SPOTS = [
         "seasons": ["春", "夏"],
         "desc": "樹齢2000〜7000年とも言われる縄文杉を目指す約22kmのトレッキングは世界遺産の洗礼。白谷雲水峡はもののけ姫の原風景とされ、苔むす森が神秘的です。",
         "highlights": ["縄文杉（世界遺産）", "白谷雲水峡", "ヤクザル・ヤクシカ", "苔の森"],
-        "links": [{"label": "屋久島観光協会", "url": "https://www.yakushima.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "屋久島観光協会", "url": "https://www.yakushima.or.jp/"}],
     },
 
     # ═══════════════════════════════════════════
@@ -996,7 +996,7 @@ SPOTS = [
         "seasons": ["冬", "春"],
         "desc": "琉球王国の遺産・首里城（復元工事中）と、沖縄そば・タコライスが揃う国際通りは沖縄旅の玄関口。牧志公設市場の食材と泡盛も見どころです。",
         "highlights": ["首里城", "国際通り", "牧志公設市場", "沖縄そば", "泡盛"],
-        "links": [{"label": "沖縄観光公式", "url": "https://www.okinawastory.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%B2%96%E7%B8%84%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "沖縄観光公式", "url": "https://www.okinawastory.jp/"}],
     },
     {
         "name": "美ら海水族館・今帰仁城",
@@ -1006,7 +1006,7 @@ SPOTS = [
         "seasons": ["冬", "春", "夏"],
         "desc": "ジンベイザメで有名な美ら海水族館とコバルトブルーの海が広がる本部半島エリア。世界遺産の今帰仁城跡は桜の名所（1〜2月）でもあります。",
         "highlights": ["美ら海水族館（ジンベイザメ）", "今帰仁城（世界遺産）", "桜の名所（1〜2月）", "エメラルドの海"],
-        "links": [{"label": "美ら海水族館", "url": "https://churaumi.okinawa/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%B2%96%E7%B8%84%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "美ら海水族館", "url": "https://churaumi.okinawa/"}],
     },
     {
         "name": "石垣島・竹富島・西表島",
@@ -1016,7 +1016,7 @@ SPOTS = [
         "seasons": ["冬", "春", "夏"],
         "desc": "フェリーで巡れる八重山諸島。竹富島の赤瓦・水牛車、西表島のマングローブ、川平湾の透明なブルーは日本屈指の絶景。星砂の浜のロマンも格別です。",
         "highlights": ["川平湾のグラスボート", "水牛車（竹富島）", "西表マングローブカヤック", "星砂の浜"],
-        "links": [{"label": "八重山観光", "url": "https://www.yaeyama.or.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%B2%96%E7%B8%84%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "八重山観光", "url": "https://www.yaeyama.or.jp/"}],
     },
     {
         "name": "宮古島・与那覇前浜",
@@ -1026,7 +1026,7 @@ SPOTS = [
         "seasons": ["春", "夏"],
         "desc": "透明度抜群の宮古ブルーとイムギャーマリンガーデンは日本屈指のシュノーケリングスポット。東洋一とも称される与那覇前浜ビーチは果てしなく白い砂浜が続きます。",
         "highlights": ["与那覇前浜ビーチ", "宮古ブルーの海", "シュノーケリング・ダイビング", "宮古そば"],
-        "links": [{"label": "宮古島観光", "url": "https://miyako-guide.net/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%B2%96%E7%B8%84%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "宮古島観光", "url": "https://miyako-guide.net/"}],
     },
     {
         "name": "やんばる・辺戸岬",
@@ -1036,9 +1036,728 @@ SPOTS = [
         "seasons": ["春", "夏", "秋"],
         "desc": "沖縄本島北部の亜熱帯照葉樹林「やんばる」は2021年に世界自然遺産に登録。ヤンバルクイナなど固有種が生息し、辺戸岬の荒波と東シナ海の絶景が待ちます。",
         "highlights": ["やんばるの森（世界遺産）", "ヤンバルクイナ観察", "辺戸岬の断崖", "大石林山"],
-        "links": [{"label": "やんばる観光", "url": "https://www.yambaru-navi.jp/"}, {"label": "🏨 じゃらんでホテルを探す", "url": "https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+67JUA&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad%2F%3FCenS%3D1%26keyword%3D%E6%B2%96%E7%B8%84%E7%9C%8C", "rel": "nofollow", "affiliate": True}],
+        "links": [{"label": "やんばる観光", "url": "https://www.yambaru-navi.jp/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  北海道（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "旭山動物園・旭橋",
+        "pref": "北海道 旭川市",
+        "region": "北海道",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "日本最北の動物園・旭山動物園は「行動展示」で有名。ペンギンの空中散歩や水中トンネルのホッキョクグマは必見。市街中心を流れる旭橋の景観も美しい。",
+        "highlights": ["ペンギン空中散歩（冬）", "ホッキョクグマ水中展示", "旭橋と忠別川の景色", "もぐもぐタイム"],
+        "links": [{"label": "旭山動物園公式", "url": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/"}],
+    },
+    {
+        "name": "帯広・幸福駅と十勝の大地",
+        "pref": "北海道 帯広市・中川郡",
+        "region": "北海道",
+        "category": ["歴史・文化", "グルメ", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "広大な十勝平野に佇む廃駅「幸福駅」は縁起スポットとして人気。十勝川温泉は美人の湯として有名で、六花亭本店のお菓子やスイーツも旅の楽しみ。",
+        "highlights": ["幸福駅（廃線跡）", "十勝川温泉（モール泉）", "六花亭本店・マルセイバターサンド", "帯広競馬場（ばんえい競馬）"],
+        "links": [{"label": "帯広観光公式", "url": "https://www.obihiro-kankou.or.jp/"}],
+    },
+    {
+        "name": "網走監獄・オホーツク流氷館",
+        "pref": "北海道 網走市",
+        "region": "北海道",
+        "category": ["歴史・文化", "自然・絶景"],
+        "seasons": ["冬", "春"],
+        "desc": "明治時代の刑務所を移築した博物館網走監獄は、北海道開拓の歴史を伝える施設。天都山のオホーツク流氷館では真冬の流氷体験と美しいオホーツク海の眺望が楽しめます。",
+        "highlights": ["博物館網走監獄（移築建物）", "オホーツク流氷館（流氷タッチ体験）", "流氷クルーズ（2月）", "天都山の展望"],
+        "links": [{"label": "網走観光公式", "url": "https://www.abakanko.jp/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  東北（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "三内丸山遺跡・八甲田山",
+        "pref": "青森県 青森市",
+        "region": "東北",
+        "category": ["歴史・文化", "自然・絶景", "世界遺産"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "縄文時代最大級の集落跡・三内丸山遺跡は2021年に世界文化遺産登録。六本柱の掘立柱建物が圧倒的迫力を誇る。八甲田山は紅葉の名所でロープウェイからの眺めが絶景。",
+        "highlights": ["六本柱建物（三内丸山）", "縄文体験展示", "八甲田山ロープウェイ", "酸ヶ湯温泉"],
+        "links": [{"label": "三内丸山遺跡センター", "url": "https://sannaimaruyama.pref.aomori.jp/"}],
+    },
+    {
+        "name": "遠野・龍泉洞・浄土ヶ浜",
+        "pref": "岩手県 遠野市・下閉伊郡",
+        "region": "東北",
+        "category": ["自然・絶景", "歴史・文化"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "柳田国男「遠野物語」の舞台で、カッパや座敷わらし伝説が残る民話の里・遠野。龍泉洞は日本三大鍾乳洞のひとつで地底湖の神秘的な青が美しく、浄土ヶ浜は宮古湾の絶景地。",
+        "highlights": ["遠野ふるさと村（伝統建築）", "龍泉洞の地底湖", "浄土ヶ浜の白岩海岸", "カッパ淵"],
+        "links": [{"label": "いわて観光", "url": "https://www.iwtkanko.jp/"}],
+    },
+    {
+        "name": "気仙沼・鳴子温泉",
+        "pref": "宮城県 気仙沼市・大崎市",
+        "region": "東北",
+        "category": ["グルメ", "温泉・癒し", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "三陸有数の港町・気仙沼はフカヒレやカキ、ホヤなど海の幸が豊富。鳴子温泉は東北有数の温泉地で9種の泉質を誇り、こけし発祥の地としても名高い。",
+        "highlights": ["フカヒレ料理", "鳴子温泉の多彩な泉質", "鳴子こけし", "気仙沼の海鮮市場"],
+        "links": [{"label": "宮城観光公式", "url": "https://www.miyagi-kankou.or.jp/"}],
+    },
+    {
+        "name": "田沢湖・乳頭温泉・男鹿半島",
+        "pref": "秋田県 仙北市・男鹿市",
+        "region": "東北",
+        "category": ["自然・絶景", "温泉・癒し", "歴史・文化"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "日本一深い湖・田沢湖はコバルトブルーの透明度が際立つ。秘湯・乳頭温泉郷は白濁の湯と茅葺き宿が絶景。男鹿半島では日本の奇祭「なまはげ」文化を体験できます。",
+        "highlights": ["田沢湖（透明度日本一）", "乳頭温泉（白濁湯）", "なまはげ館（男鹿半島）", "辰子像"],
+        "links": [{"label": "秋田観光", "url": "https://akita-tourism.com/"}],
+    },
+    {
+        "name": "銀山温泉・出羽三山",
+        "pref": "山形県 尾花沢市・鶴岡市",
+        "region": "東北",
+        "category": ["温泉・癒し", "歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "大正ロマン漂う洋風建築の宿が銀山川沿いに立ち並ぶ銀山温泉は、冬の雪景色が幻想的。出羽三山（月山・羽黒山・湯殿山）は修験道の霊山で精進料理も楽しめます。",
+        "highlights": ["銀山温泉の雪景色（冬）", "ガス灯が灯る夕刻の街並み", "羽黒山の五重塔", "精進料理"],
+        "links": [{"label": "銀山温泉観光", "url": "https://www.ginzanonsen.jp/"}],
+    },
+    {
+        "name": "飯坂温泉・いわき市スパリゾートハワイアンズ",
+        "pref": "福島県 福島市・いわき市",
+        "region": "東北",
+        "category": ["温泉・癒し", "歴史・文化"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "福島市郊外の奥州三名湯・飯坂温泉は共同浴場が点在する情緒ある湯の町。いわき市のスパリゾートハワイアンズは常磐炭鉱の歴史を持ち、フラダンスショーが名物。",
+        "highlights": ["飯坂共同浴場めぐり", "フラダンスショー（ハワイアンズ）", "温水プール施設", "飯坂の鯖湖湯"],
+        "links": [{"label": "ふくしま観光", "url": "https://www.tif.ne.jp/fukushima/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  関東（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "筑波山・国営ひたち海浜公園",
+        "pref": "茨城県 つくば市・ひたちなか市",
+        "region": "関東",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "「西の富士、東の筑波」と称される筑波山はケーブルカーで登れる関東平野を一望する名峰。ひたち海浜公園はネモフィラ（春）とコキア（秋）の丘が全国から観光客を集めます。",
+        "highlights": ["ネモフィラの丘（5月）", "コキア（秋）", "筑波山ケーブルカー", "みはらしの丘"],
+        "links": [{"label": "ひたち海浜公園", "url": "https://hitachikaihin.jp/"}],
+    },
+    {
+        "name": "足利フラワーパーク・益子焼",
+        "pref": "栃木県 足利市・芳賀郡",
+        "region": "関東",
+        "category": ["自然・絶景", "歴史・文化"],
+        "seasons": ["春", "秋"],
+        "desc": "樹齢150年超の大藤が咲き誇る足利フラワーパークは、CNNが選ぶ世界の夢の旅行先にも選ばれた藤の名所。益子焼は栃木を代表する陶磁器で、春と秋に大陶器市が開催されます。",
+        "highlights": ["大藤（ゴールデンウィーク）", "イルミネーション（冬）", "益子陶器市（春・秋）", "益子の登り窯"],
+        "links": [{"label": "足利フラワーパーク", "url": "https://www.ashikaga.co.jp/"}],
+    },
+    {
+        "name": "伊香保温泉・富岡製糸場",
+        "pref": "群馬県 渋川市・富岡市",
+        "region": "関東",
+        "category": ["温泉・癒し", "歴史・文化", "世界遺産"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "石段街で知られる伊香保温泉は群馬を代表する温泉地で、黄金色の黄金の湯が有名。富岡製糸場は明治時代の近代化を物語るフランス式繰糸工場で世界文化遺産に登録されています。",
+        "highlights": ["伊香保石段街", "黄金の湯と白銀の湯", "富岡製糸場（世界遺産）", "榛名湖"],
+        "links": [{"label": "伊香保温泉観光", "url": "https://www.ikaho-kankou.com/"}],
+    },
+    {
+        "name": "川越・小江戸の蔵造り街並み",
+        "pref": "埼玉県 川越市",
+        "region": "関東",
+        "category": ["歴史・文化", "グルメ"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "「小江戸」と称される川越は蔵造りの街並みが残る関東有数の観光地。時の鐘、菓子屋横丁のさつまいも菓子、川越氷川神社の縁結びでも人気。鉄道博物館は大宮の必見スポット。",
+        "highlights": ["蔵造り街並み（一番街）", "時の鐘", "菓子屋横丁", "川越氷川神社"],
+        "links": [{"label": "川越市観光", "url": "https://www.koedo.or.jp/"}],
+    },
+    {
+        "name": "館山・鴨川シーワールド",
+        "pref": "千葉県 館山市・鴨川市",
+        "region": "関東",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏"],
+        "desc": "房総半島南端の館山は温暖な気候とマリンスポーツの聖地。白浜海水浴場は透明度が高く関東屈指のビーチ。鴨川シーワールドではシャチのパフォーマンスが大人気です。",
+        "highlights": ["館山白浜海水浴場", "シーカヤック・ダイビング", "シャチパフォーマンス（鴨川）", "城山公園の菜の花"],
+        "links": [{"label": "館山市観光", "url": "https://www.tateyamacity.com/"}],
+    },
+    {
+        "name": "高尾山・横浜中華街・みなとみらい",
+        "pref": "東京都・神奈川県 八王子市・横浜市",
+        "region": "関東",
+        "category": ["自然・絶景", "グルメ", "歴史・文化"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "世界一登山者数が多いとされる高尾山は都心からのアクセス抜群。横浜中華街は日本最大の中華街で食べ歩きが楽しく、みなとみらいの夜景は日本有数の絶景スポットです。",
+        "highlights": ["高尾山薬王院", "高尾山トレッキング", "横浜中華街食べ歩き", "みなとみらい夜景"],
+        "links": [{"label": "高尾山観光", "url": "https://www.takaotozan.co.jp/"}],
+    },
+    {
+        "name": "三浦半島・城ヶ島",
+        "pref": "神奈川県 三浦市",
+        "region": "関東",
+        "category": ["自然・絶景", "グルメ", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "神奈川最南端の三浦半島は新鮮なマグロ料理と城ヶ島の海岸絶景が魅力。剱崎灯台や荒崎海岸のダイナミックな地形、菜の花とポピーの花畑（春）も人気スポットです。",
+        "highlights": ["三崎まぐろ料理", "城ヶ島の断崖海岸", "剱崎灯台", "春の菜の花畑"],
+        "links": [{"label": "三浦市観光", "url": "https://www.miura-city.jp/kanko/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  中部（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "弥彦神社・寺泊",
+        "pref": "新潟県 西蒲原郡・長岡市",
+        "region": "中部",
+        "category": ["歴史・文化", "グルメ"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "越後一宮・弥彦神社は弥彦山のふもとに鎮座する格式高い神社で、春の菊まつりと秋の紅葉が見事。近くの寺泊は「日本海の台所」と呼ばれる魚のアメ横で新鮮な海産物が揃います。",
+        "highlights": ["弥彦神社拝殿", "弥彦山ロープウェイ", "寺泊魚のアメ横", "越後ワイン"],
+        "links": [{"label": "弥彦観光", "url": "https://www.e-yahiko.com/"}],
+    },
+    {
+        "name": "氷見・高岡の伏木",
+        "pref": "富山県 氷見市・高岡市",
+        "region": "中部",
+        "category": ["グルメ", "歴史・文化", "自然・絶景"],
+        "seasons": ["冬", "春"],
+        "desc": "氷見は寒ぶりの水揚げで有名な港町で、立山連峰を望む絶景が楽しめます。高岡は国宝・瑞龍寺や日本三大仏のひとつ高岡大仏、藤子・F・不二雄ゆかりの地として人気です。",
+        "highlights": ["氷見寒ぶり（12〜2月）", "立山連峰の眺望", "高岡大仏", "瑞龍寺（国宝）"],
+        "links": [{"label": "氷見観光", "url": "https://www.city.himi.toyama.jp/kanko/"}],
+    },
+    {
+        "name": "輪島・白米千枚田",
+        "pref": "石川県 輪島市",
+        "region": "中部",
+        "category": ["歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "能登半島最大の都市・輪島は輪島塗の産地で、朝市が有名。日本海に面した白米千枚田は1004枚の水田が棚田を形成し、世界農業遺産に認定された絶景スポットです。",
+        "highlights": ["輪島朝市", "白米千枚田（棚田）", "輪島塗工芸", "能登キリコ祭り"],
+        "links": [{"label": "輪島観光公式", "url": "https://www.wajima-kankou.jp/"}],
+    },
+    {
+        "name": "一乗谷朝倉氏遺跡・越前海岸",
+        "pref": "福井県 福井市",
+        "region": "中部",
+        "category": ["歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "戦国大名・朝倉氏が築いた城下町の遺構が保存された一乗谷朝倉氏遺跡は国の特別史跡。越前海岸はタケノコの産地として有名で、豪快な岩礁海岸と水仙の群生地としても知られます。",
+        "highlights": ["一乗谷の復元町並み", "越前水仙（1〜2月）", "越前海岸の断崖絶壁", "永平寺（禅の聖地）"],
+        "links": [{"label": "一乗谷朝倉遺跡", "url": "https://www.city.fukui.lg.jp/kanko/asakura/"}],
+    },
+    {
+        "name": "清里高原・西沢渓谷",
+        "pref": "山梨県 北杜市・山梨市",
+        "region": "中部",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "標高1300mの高原リゾート・清里は八ヶ岳を望む高原野菜の産地で、牧場や美術館が点在。西沢渓谷は七ツ釜五段の滝を筆頭に渓流美が続く人気のハイキングコースです。",
+        "highlights": ["清里牧場（ソフトクリーム）", "清里テラス", "七ツ釜五段の滝（西沢渓谷）", "紅葉ハイキング"],
+        "links": [{"label": "清里観光", "url": "https://www.kiyosato.gr.jp/"}],
+    },
+    {
+        "name": "浜松・浜名湖と寸又峡",
+        "pref": "静岡県 浜松市・榛原郡",
+        "region": "中部",
+        "category": ["自然・絶景", "温泉・癒し", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "日本最大の天然湖・浜名湖はウナギ養殖で全国有数。弁天島や湖上クルーズが楽しめます。寸又峡は深緑色の湖面と温泉が魅力の秘境で「夢の吊り橋」は絶景スポット。",
+        "highlights": ["夢の吊り橋（寸又峡）", "浜名湖うなぎ", "浜名湖観光クルーズ", "ウナギ養殖場見学"],
+        "links": [{"label": "浜松観光", "url": "https://www.hamamatsu-daisuki.net/"}],
+    },
+    {
+        "name": "犬山城・常滑",
+        "pref": "愛知県 犬山市・常滑市",
+        "region": "中部",
+        "category": ["歴史・文化", "グルメ"],
+        "seasons": ["春", "秋", "冬"],
+        "desc": "木曽川沿いに建つ犬山城は国宝で現存12天守のひとつ。城下町の食べ歩きも人気。常滑市は焼き物の町で、やきもの散歩道には登り窯や陶器店が並び独特の雰囲気を醸します。",
+        "highlights": ["犬山城（国宝天守）", "城下町食べ歩き", "やきもの散歩道（常滑）", "LEGOLAND（名古屋港）"],
+        "links": [{"label": "犬山観光", "url": "https://inuyama.gr.jp/"}],
+    },
+    {
+        "name": "諏訪湖・白馬村",
+        "pref": "長野県 諏訪市・北安曇郡",
+        "region": "中部",
+        "category": ["自然・絶景", "アウトドア", "温泉・癒し"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "長野最大の湖・諏訪湖は全面結氷時の「御神渡り」が神秘的。下諏訪温泉と諏訪大社も隣接。白馬村は北アルプスを望むスキーリゾートで、夏はトレッキングと高山植物の宝庫です。",
+        "highlights": ["御神渡り（諏訪湖・冬）", "諏訪大社", "白馬スキー場", "白馬岩岳マウンテンリゾート"],
+        "links": [{"label": "白馬観光", "url": "https://www.vill.hakuba.nagano.jp/tourism/"}],
+    },
+    {
+        "name": "郡上八幡・恵那峡",
+        "pref": "岐阜県 郡上市・恵那市",
+        "region": "中部",
+        "category": ["歴史・文化", "自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "清流吉田川が流れる郡上八幡は「水の城下町」として有名で、400年の歴史を持つ郡上おどりが夏の風物詩。恵那峡は木曽川が創出した峡谷美を遊覧船から楽しめます。",
+        "highlights": ["郡上おどり（7〜9月）", "郡上八幡城", "清流での飛び込み", "恵那峡遊覧船"],
+        "links": [{"label": "郡上八幡観光", "url": "https://www.gujo-kanko.jp/"}],
+    },
+    {
+        "name": "松阪・鈴鹿サーキット",
+        "pref": "三重県 松阪市・鈴鹿市",
+        "region": "中部",
+        "category": ["グルメ", "歴史・文化"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "「肉の芸術品」と称される松阪牛の産地・松阪市は松阪城址や商人の館など歴史遺産も豊富。鈴鹿サーキットはF1日本グランプリの開催地で、二輪・四輪のモータースポーツ聖地です。",
+        "highlights": ["松阪牛ステーキ・すき焼き", "松阪城址公園", "F1日本グランプリ（鈴鹿）", "鈴鹿サーキット遊園地"],
+        "links": [{"label": "松阪観光", "url": "https://www.matsusaka-kanko.com/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  近畿（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "長浜・竹生島",
+        "pref": "滋賀県 長浜市",
+        "region": "近畿",
+        "category": ["歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "豊臣秀吉ゆかりの城下町・長浜は黒壁スクエアのガラス工芸品店が人気。琵琶湖に浮かぶ竹生島には宝厳寺と竹生島神社があり、湖上渡し船と合わせて参拝する神秘的な島です。",
+        "highlights": ["黒壁スクエア", "竹生島（宝厳寺・都久夫須麻神社）", "長浜城歴史博物館", "盆梅展（1〜3月）"],
+        "links": [{"label": "長浜観光", "url": "https://kitabiwako.jp/"}],
+    },
+    {
+        "name": "宇治・天橋立・伏見稲荷",
+        "pref": "京都府 宇治市・宮津市・伏見区",
+        "region": "近畿",
+        "category": ["歴史・文化", "自然・絶景", "世界遺産"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "世界遺産の平等院鳳凰堂がある宇治は抹茶スイーツの聖地。日本三景・天橋立は股覗きで有名な砂嘴。全国に3万社ある稲荷神社の総本宮・伏見稲荷大社の千本鳥居は外国人にも大人気。",
+        "highlights": ["平等院鳳凰堂（世界遺産）", "宇治抹茶スイーツ", "天橋立股覗き", "伏見稲荷千本鳥居"],
+        "links": [{"label": "宇治観光", "url": "https://www.uji-kankou.or.jp/"}],
+    },
+    {
+        "name": "新世界・天保山・大阪城",
+        "pref": "大阪府 大阪市",
+        "region": "近畿",
+        "category": ["グルメ", "歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "大阪・新世界はビリケンさんと串カツの聖地で昭和レトロな雰囲気が漂う。天保山には海遊館（世界最大級の水族館）がある。豊臣秀吉が築いた大阪城と花見（春）も定番コースです。",
+        "highlights": ["串カツ食べ歩き（新世界）", "ジンベエザメ（海遊館）", "大阪城（桜の名所）", "通天閣"],
+        "links": [{"label": "大阪観光", "url": "https://www.osaka-info.jp/"}],
+    },
+    {
+        "name": "城崎温泉・淡路島",
+        "pref": "兵庫県 豊岡市・淡路市",
+        "region": "近畿",
+        "category": ["温泉・癒し", "グルメ", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "浴衣で外湯めぐりができる城崎温泉は山陰の名湯として名高く、カニ料理（冬）が絶品。淡路島は玉ねぎと淡路牛で有名な島で、明石海峡大橋から連絡するアクセス良好な観光地です。",
+        "highlights": ["城崎温泉外湯めぐり", "カニ料理（冬）", "淡路玉ねぎ・淡路牛バーガー", "淡路夢舞台"],
+        "links": [{"label": "城崎温泉観光", "url": "https://www.kinosaki-spa.gr.jp/"}],
+    },
+    {
+        "name": "吉野山・飛鳥",
+        "pref": "奈良県 吉野郡",
+        "region": "近畿",
+        "category": ["自然・絶景", "歴史・文化", "世界遺産"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "「一目千本」の桜で名高い吉野山は世界遺産・吉野熊野国立公園の一部。飛鳥地方は古代日本の首都で、飛鳥大仏・石舞台古墳・キトラ古墳壁画など日本史の宝庫です。",
+        "highlights": ["吉野山の桜（4月）", "金峯山寺（世界遺産）", "石舞台古墳（飛鳥）", "飛鳥大仏"],
+        "links": [{"label": "吉野山観光", "url": "https://www.yoshinoyama-sakura.jp/"}],
+    },
+    {
+        "name": "白浜温泉・那智勝浦",
+        "pref": "和歌山県 西牟婁郡・東牟婁郡",
+        "region": "近畿",
+        "category": ["温泉・癒し", "自然・絶景", "世界遺産"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "南紀白浜は千畳敷・三段壁など奇岩が並ぶ海岸と白良浜の白砂が美しい温泉リゾート。那智勝浦には日本最大の滝・那智の滝と熊野那智大社（世界遺産）があり、マグロも絶品です。",
+        "highlights": ["那智の滝（133m）", "熊野那智大社（世界遺産）", "白良浜ビーチ", "三段壁洞窟"],
+        "links": [{"label": "南紀白浜観光", "url": "https://www.nanki-shirahama.com/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  中国（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "大山・三朝温泉",
+        "pref": "鳥取県 西伯郡・東伯郡",
+        "region": "中国",
+        "category": ["自然・絶景", "温泉・癒し", "アウトドア"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "中国地方最高峰・大山は「伯耆富士」とも呼ばれる秀麗な山容で、ブナ林の紅葉（秋）とスキー場（冬）が人気。三朝温泉は世界有数のラドン含有量を誇る薬効高い名湯です。",
+        "highlights": ["大山の紅葉（10〜11月）", "大山登山（夏）", "三朝温泉（ラドン泉）", "鳥取砂丘"],
+        "links": [{"label": "大山観光", "url": "https://www.daisenking-park.jp/"}],
+    },
+    {
+        "name": "石見銀山・津和野",
+        "pref": "島根県 大田市・鹿足郡",
+        "region": "中国",
+        "category": ["歴史・文化", "世界遺産"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "16世紀に開発された石見銀山は2007年に世界文化遺産登録。坑道見学や古い町並み散歩が楽しめます。津和野は「山陰の小京都」と呼ばれる武家屋敷と鷺舞が残る美しい城下町です。",
+        "highlights": ["石見銀山（世界遺産・坑道見学）", "津和野の武家屋敷", "鷺舞神事（7月）", "津和野城跡"],
+        "links": [{"label": "石見銀山観光", "url": "https://www.ginzan-world.com/"}],
+    },
+    {
+        "name": "蒜山高原・牛窓",
+        "pref": "岡山県 真庭市・瀬戸内市",
+        "region": "中国",
+        "category": ["自然・絶景", "グルメ", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "中国山地の高原リゾート・蒜山はジャージー牛の放牧と新鮮なヨーグルトが有名。牛窓は「日本のエーゲ海」と称される白壁の街並みとオリーブ農園が広がる地中海風景観が楽しめます。",
+        "highlights": ["蒜山ジャージーソフトクリーム", "蒜山高原サイクリング", "牛窓オリーブ園", "前島の絶景"],
+        "links": [{"label": "蒜山観光", "url": "https://www.hiruzen.gr.jp/"}],
+    },
+    {
+        "name": "尾道・竹原",
+        "pref": "広島県 尾道市・竹原市",
+        "region": "中国",
+        "category": ["歴史・文化", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "坂道と寺院が入り組む「坂の街」尾道は映画のロケ地としても有名。サイクリストの聖地・しまなみ海道の出発点でもあります。竹原は「安芸の小京都」で江戸時代の製塩業で栄えた町並みが残ります。",
+        "highlights": ["尾道の坂道と寺院群", "猫の細道", "しまなみ海道（自転車）", "竹原の伝統的建造物群"],
+        "links": [{"label": "尾道観光", "url": "https://www.ononavi.jp/"}],
+    },
+    {
+        "name": "角島大橋・錦帯橋",
+        "pref": "山口県 下関市・岩国市",
+        "region": "中国",
+        "category": ["自然・絶景", "歴史・文化"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "角島大橋は日本海に架かるエメラルドグリーンの海上を渡る絶景橋で写真映えNo.1スポット。岩国の錦帯橋は五連の木造アーチ橋で日本三名橋のひとつ、岩国城とのセットが定番です。",
+        "highlights": ["角島大橋のドライブ", "角島灯台", "錦帯橋（日本三名橋）", "岩国城とロープウェイ"],
+        "links": [{"label": "山口観光", "url": "https://www.yamaguchikenkankokyokai.or.jp/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  四国（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "祖谷渓・剣山",
+        "pref": "徳島県 三好市",
+        "region": "四国",
+        "category": ["自然・絶景", "歴史・文化", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "日本三大秘境のひとつ・祖谷渓は深いV字谷と有名な「かずら橋」（天然素材の吊り橋）が有名。剣山は西日本第二峰で、稜線を歩く登山と高山植物の宝庫として人気があります。",
+        "highlights": ["かずら橋（天然藤の吊り橋）", "祖谷の小便小僧", "剣山頂上（1955m）", "奥祖谷二重かずら橋"],
+        "links": [{"label": "祖谷渓観光", "url": "https://www.miyoshi-tourism.jp/"}],
+    },
+    {
+        "name": "小豆島・父母ヶ浜",
+        "pref": "香川県 小豆郡・三豊市",
+        "region": "四国",
+        "category": ["自然・絶景", "グルメ", "歴史・文化"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "日本のエーゲ海とも呼ばれる小豆島はオリーブ農園とそうめん・醤油が名産。父母ヶ浜は干潮時に水鏡状になる「日本のウユニ塩湖」として大人気のインスタ映えスポットです。",
+        "highlights": ["オリーブ公園（小豆島）", "エンジェルロード（干潮時）", "父母ヶ浜の水鏡", "小豆島そうめん"],
+        "links": [{"label": "小豆島観光", "url": "https://shodoshima.or.jp/"}],
+    },
+    {
+        "name": "しまなみ海道・内子",
+        "pref": "愛媛県 今治市・喜多郡",
+        "region": "四国",
+        "category": ["自然・絶景", "歴史・文化", "アウトドア"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "瀬戸内海の島々を結ぶしまなみ海道は世界屈指のサイクリングルート。橋からの眺めが絶景です。内子は和ろうそくと木蝋で栄えた江戸・明治期の伝統的建造物群が国の重要伝統建造物に指定されています。",
+        "highlights": ["しまなみ海道サイクリング", "来島海峡大橋", "内子の伝統建造物群", "大三島（最古の大山祇神社）"],
+        "links": [{"label": "しまなみ観光", "url": "https://www.go-shimanami.jp/"}],
+    },
+    {
+        "name": "室戸岬・龍河洞",
+        "pref": "高知県 室戸市・香美市",
+        "region": "四国",
+        "category": ["自然・絶景", "歴史・文化"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "太平洋に突き出た室戸岬は巨岩奇岩が連なる荒々しい海岸線が圧巻で、弘法大師ゆかりの御厨人窟もあります。龍河洞は高知最大の鍾乳洞で、弥生時代の遺跡と地形の共演が見どころです。",
+        "highlights": ["室戸岬灯台", "御厨人窟（弘法大師修行地）", "龍河洞の鍾乳石", "海岸の奇岩群"],
+        "links": [{"label": "室戸ジオパーク", "url": "https://muroto-geo.jp/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  九州（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "門司港レトロ・糸島",
+        "pref": "福岡県 北九州市・糸島市",
+        "region": "九州",
+        "category": ["歴史・文化", "グルメ", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "明治・大正期の洋風建築が残る門司港レトロ地区はロマン薫る港町で焼きカレーが名物。糸島は福岡市近郊の海岸線リゾートで、牡蠣の浜焼き小屋（冬）と玄界灘の夕日が絶景です。",
+        "highlights": ["門司港レトロ（洋風建築群）", "焼きカレー（門司港）", "糸島牡蠣浜焼き（冬）", "二見ヶ浦夫婦岩"],
+        "links": [{"label": "門司港レトロ", "url": "https://www.mojiko.info/"}],
+    },
+    {
+        "name": "唐津城・呼子",
+        "pref": "佐賀県 唐津市",
+        "region": "九州",
+        "category": ["歴史・文化", "グルメ", "自然・絶景"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "虹の松原と海に囲まれた唐津城は「舞鶴城」とも呼ばれる美しい城。秋の唐津くんち（曳山祭り）は日本三大くんちのひとつ。呼子は活イカの活き造りで全国に名高い海の幸の宝庫です。",
+        "highlights": ["唐津城と虹の松原", "唐津くんち（11月）", "呼子の活イカ活き造り", "呼子朝市"],
+        "links": [{"label": "唐津観光", "url": "https://www.karatsu-kankou.jp/"}],
+    },
+    {
+        "name": "ハウステンボス・五島列島",
+        "pref": "長崎県 佐世保市・五島市",
+        "region": "九州",
+        "category": ["歴史・文化", "自然・絶景", "グルメ"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "オランダの街並みを再現したハウステンボスは九州最大のテーマパークで、花・光のイベントが年中行われます。五島列島は潜伏キリシタンの世界遺産教会群と美しい自然が共存する島々です。",
+        "highlights": ["光の王国（イルミネーション）", "五島教会群（世界遺産）", "五島うどん", "福江島の鬼岳"],
+        "links": [{"label": "ハウステンボス公式", "url": "https://www.huistenbosch.co.jp/"}],
+    },
+    {
+        "name": "天草・黒川温泉",
+        "pref": "熊本県 天草市・阿蘇郡",
+        "region": "九州",
+        "category": ["歴史・文化", "温泉・癒し", "自然・絶景"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "天草は潜伏キリシタンゆかりの世界遺産「崎津集落」と海の幸が有名。イルカウォッチングも人気。黒川温泉は渓流沿いに旅館が点在する秘湯で、入湯手形での露天風呂めぐりが名物です。",
+        "highlights": ["崎津集落・崎津天主堂（世界遺産）", "イルカウォッチング", "黒川温泉露天風呂めぐり", "天草大王（地鶏）"],
+        "links": [{"label": "黒川温泉観光", "url": "https://www.kurokawaonsen.or.jp/"}],
+    },
+    {
+        "name": "耶馬渓・臼杵石仏",
+        "pref": "大分県 中津市・臼杵市",
+        "region": "九州",
+        "category": ["自然・絶景", "歴史・文化"],
+        "seasons": ["春", "秋"],
+        "desc": "日本一の溪谷美ともいわれる耶馬渓は奇岩・断崖が続き、秋の紅葉は圧巻。臼杵石仏は平安時代後期に彫られた国宝の磨崖仏群で、全部で60余体が山腹に並ぶ神秘的な景観を誇ります。",
+        "highlights": ["耶馬溪の紅葉（10〜11月）", "青の洞門（耶馬溪）", "臼杵石仏（国宝磨崖仏）", "耶馬溪ダム"],
+        "links": [{"label": "大分観光", "url": "https://www.visit-oita.jp/"}],
+    },
+    {
+        "name": "飫肥城・日向岬",
+        "pref": "宮崎県 日南市",
+        "region": "九州",
+        "category": ["歴史・文化", "自然・絶景", "グルメ"],
+        "seasons": ["春", "夏", "秋"],
+        "desc": "「九州の小京都」飫肥は飫肥城を中心に武家屋敷や商家の街並みが残る歴史城下町。厚焼き玉子と厚揚げが名物。日南海岸は断崖と青い海が続く南国ドライブルートで日向岬の絶景が必見。",
+        "highlights": ["飫肥城（大手門・本丸）", "飫肥厚焼き玉子", "日向岬・馬ヶ背（断崖絶壁）", "鵜戸神宮"],
+        "links": [{"label": "飫肥観光", "url": "https://www.obi-castle.net/"}],
+    },
+    {
+        "name": "霧島温泉・奄美大島",
+        "pref": "鹿児島県 霧島市・奄美市",
+        "region": "九州",
+        "category": ["温泉・癒し", "自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "活火山・霧島山のふもとに広がる霧島温泉郷は坂本龍馬の新婚旅行地としても有名。奄美大島は亜熱帯の固有種が生息する世界自然遺産の島で、マングローブカヌーやシュノーケリングが楽しめます。",
+        "highlights": ["霧島神宮", "霧島連山トレッキング", "奄美大島マングローブカヌー", "奄美の固有種（ルリカケス等）"],
+        "links": [{"label": "霧島観光", "url": "https://www.kirishimakankou.com/"}],
+    },
+
+    # ═══════════════════════════════════════════
+    #  沖縄（追加）
+    # ═══════════════════════════════════════════
+    {
+        "name": "古宇利島・備瀬のフクギ並木",
+        "pref": "沖縄県 国頭郡今帰仁村",
+        "region": "沖縄",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏", "秋", "冬"],
+        "desc": "古宇利大橋でつながる古宇利島はエメラルドの海と白浜が美しい「恋の島」。天国のビーチと呼ばれるハートロックが人気。備瀬には300年以上の樹齢を誇るフクギ並木の神秘的な散策路があります。",
+        "highlights": ["古宇利大橋の絶景ドライブ", "ハートロック（古宇利島）", "備瀬フクギ並木散策", "水牛車乗車（近隣）"],
+        "links": [{"label": "今帰仁村観光", "url": "https://nakijin.i-okinawa.jp/"}],
+    },
+    {
+        "name": "久米島",
+        "pref": "沖縄県 島尻郡久米島町",
+        "region": "沖縄",
+        "category": ["自然・絶景", "アウトドア"],
+        "seasons": ["春", "夏"],
+        "desc": "那覇から飛行機で約30分、「沖縄で最も美しい海」とも評される久米島。ハテの浜は細長い砂州に囲まれた別天地で、イーフビーチの透明度は沖縄本島随一。久米島ウミガメとの遭遇率も高いです。",
+        "highlights": ["ハテの浜（砂州）", "イーフビーチのシュノーケリング", "ウミガメと泳ぐ体験", "畳石（奇岩地形）"],
+        "links": [{"label": "久米島観光", "url": "https://www.kankou-kumejima.com/"}],
     },
 ]
+
+# ─────────────────────────────────────────────
+#  定数
+# ─────────────────────────────────────────────
+ALL_REGIONS = ["全国", "北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州", "沖縄"]
+ALL_CATEGORIES = sorted({cat for spot in SPOTS for cat in spot["category"]})
+SEASON_EMOJI = {"春": "🌸", "夏": "☀️", "秋": "🍁", "冬": "❄️"}
+CATEGORY_EMOJI = {
+    "歴史・文化": "🏯",
+    "自然・絶景": "🏔️",
+    "アウトドア": "🥾",
+    "グルメ": "🍜",
+    "温泉・癒し": "♨️",
+    "世界遺産": "🌏",
+    "夜景": "🌃",
+}
+REGION_ORDER = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州", "沖縄"]
+
+# ─────────────────────────────────────────────
+#  周辺おすすめスポット（各スポットに nearby キーを付与）
+# ─────────────────────────────────────────────
+_NEARBY = {
+    # 北海道
+    "函館山・五稜郭": ["小樽運河・余市蒸溜所", "登別温泉・洞爺湖", "札幌・大通公園・すすきの"],
+    "富良野・美瑛のラベンダー畑": ["旭山動物園・旭橋", "札幌・大通公園・すすきの", "小樽運河・余市蒸溜所"],
+    "知床五湖・羅臼": ["釧路湿原・阿寒湖", "網走監獄・オホーツク流氷館", "帯広・幸福駅と十勝の大地"],
+    "小樽運河・余市蒸溜所": ["函館山・五稜郭", "札幌・大通公園・すすきの", "登別温泉・洞爺湖"],
+    "登別温泉・洞爺湖": ["小樽運河・余市蒸溜所", "函館山・五稜郭", "札幌・大通公園・すすきの"],
+    "札幌・大通公園・すすきの": ["小樽運河・余市蒸溜所", "登別温泉・洞爺湖", "富良野・美瑛のラベンダー畑"],
+    "釧路湿原・阿寒湖": ["知床五湖・羅臼", "網走監獄・オホーツク流氷館", "帯広・幸福駅と十勝の大地"],
+    "旭山動物園・旭橋": ["富良野・美瑛のラベンダー畑", "札幌・大通公園・すすきの", "小樽運河・余市蒸溜所"],
+    "帯広・幸福駅と十勝の大地": ["釧路湿原・阿寒湖", "知床五湖・羅臼", "網走監獄・オホーツク流氷館"],
+    "網走監獄・オホーツク流氷館": ["知床五湖・羅臼", "釧路湿原・阿寒湖", "帯広・幸福駅と十勝の大地"],
+    # 東北
+    "弘前城・弘前公園": ["青森ねぶた祭・青森市街", "奥入瀬渓流・十和田湖", "三内丸山遺跡・八甲田山"],
+    "青森ねぶた祭・青森市街": ["弘前城・弘前公園", "三内丸山遺跡・八甲田山", "奥入瀬渓流・十和田湖"],
+    "奥入瀬渓流・十和田湖": ["弘前城・弘前公園", "青森ねぶた祭・青森市街", "三内丸山遺跡・八甲田山"],
+    "三内丸山遺跡・八甲田山": ["弘前城・弘前公園", "青森ねぶた祭・青森市街", "奥入瀬渓流・十和田湖"],
+    "盛岡城跡・盛岡三大麺": ["平泉・中尊寺金色堂", "遠野・龍泉洞・浄土ヶ浜", "三陸海岸・浄土ヶ浜"],
+    "平泉・中尊寺金色堂": ["盛岡城跡・盛岡三大麺", "遠野・龍泉洞・浄土ヶ浜", "三陸海岸・浄土ヶ浜"],
+    "三陸海岸・浄土ヶ浜": ["盛岡城跡・盛岡三大麺", "平泉・中尊寺金色堂", "遠野・龍泉洞・浄土ヶ浜"],
+    "遠野・龍泉洞・浄土ヶ浜": ["盛岡城跡・盛岡三大麺", "平泉・中尊寺金色堂", "三陸海岸・浄土ヶ浜"],
+    "仙台・松島": ["鳴子温泉郷・鳴子峡", "気仙沼・鳴子温泉", "平泉・中尊寺金色堂"],
+    "鳴子温泉郷・鳴子峡": ["仙台・松島", "気仙沼・鳴子温泉", "秋田竿燈まつり・角館"],
+    "気仙沼・鳴子温泉": ["仙台・松島", "鳴子温泉郷・鳴子峡", "平泉・中尊寺金色堂"],
+    "秋田竿燈まつり・角館": ["男鹿半島・なまはげ", "田沢湖・乳頭温泉・男鹿半島", "銀山温泉・出羽三山"],
+    "男鹿半島・なまはげ": ["秋田竿燈まつり・角館", "田沢湖・乳頭温泉・男鹿半島", "銀山温泉・出羽三山"],
+    "田沢湖・乳頭温泉・男鹿半島": ["秋田竿燈まつり・角館", "男鹿半島・なまはげ", "銀山温泉・出羽三山"],
+    "山形・蔵王温泉・山寺": ["銀山温泉・出羽三山", "仙台・松島", "秋田竿燈まつり・角館"],
+    "銀山温泉・出羽三山": ["山形・蔵王温泉・山寺", "秋田竿燈まつり・角館", "田沢湖・乳頭温泉・男鹿半島"],
+    "会津若松・鶴ヶ城・大内宿": ["磐梯山・猪苗代湖・五色沼", "飯坂温泉・いわき市スパリゾートハワイアンズ", "日光東照宮・中禅寺湖"],
+    "磐梯山・猪苗代湖・五色沼": ["会津若松・鶴ヶ城・大内宿", "飯坂温泉・いわき市スパリゾートハワイアンズ", "日光東照宮・中禅寺湖"],
+    "飯坂温泉・いわき市スパリゾートハワイアンズ": ["会津若松・鶴ヶ城・大内宿", "磐梯山・猪苗代湖・五色沼", "仙台・松島"],
+    # 関東
+    "偕楽園・袋田の滝": ["筑波山・つくば", "筑波山・国営ひたち海浜公園", "日光東照宮・中禅寺湖"],
+    "筑波山・つくば": ["偕楽園・袋田の滝", "筑波山・国営ひたち海浜公園", "成田山・九十九里浜"],
+    "筑波山・国営ひたち海浜公園": ["偕楽園・袋田の滝", "筑波山・つくば", "成田山・九十九里浜"],
+    "日光東照宮・中禅寺湖": ["那須高原・塩原温泉", "足利フラワーパーク・佐野", "偕楽園・袋田の滝"],
+    "那須高原・塩原温泉": ["日光東照宮・中禅寺湖", "足利フラワーパーク・佐野", "会津若松・鶴ヶ城・大内宿"],
+    "足利フラワーパーク・佐野": ["日光東照宮・中禅寺湖", "草津温泉・尾瀬ヶ原", "富岡製糸場・妙義山"],
+    "足利フラワーパーク・益子焼": ["日光東照宮・中禅寺湖", "那須高原・塩原温泉", "草津温泉・尾瀬ヶ原"],
+    "草津温泉・尾瀬ヶ原": ["富岡製糸場・妙義山", "伊香保温泉・富岡製糸場", "日光東照宮・中禅寺湖"],
+    "富岡製糸場・妙義山": ["草津温泉・尾瀬ヶ原", "伊香保温泉・富岡製糸場", "秩父・三峯神社・長瀞"],
+    "伊香保温泉・富岡製糸場": ["草津温泉・尾瀬ヶ原", "富岡製糸場・妙義山", "秩父・三峯神社・長瀞"],
+    "秩父・三峯神社・長瀞": ["川越・蔵造りの町並み", "川越・小江戸の蔵造り街並み", "草津温泉・尾瀬ヶ原"],
+    "川越・蔵造りの町並み": ["秩父・三峯神社・長瀞", "川越・小江戸の蔵造り街並み", "浅草・上野・東京スカイツリー"],
+    "川越・小江戸の蔵造り街並み": ["秩父・三峯神社・長瀞", "川越・蔵造りの町並み", "浅草・上野・東京スカイツリー"],
+    "成田山・九十九里浜": ["館山・南房総", "館山・鴨川シーワールド", "鎌倉・江ノ島"],
+    "館山・南房総": ["成田山・九十九里浜", "館山・鴨川シーワールド", "鎌倉・江ノ島"],
+    "館山・鴨川シーワールド": ["成田山・九十九里浜", "館山・南房総", "鎌倉・江ノ島"],
+    "鎌倉・江ノ島": ["箱根・芦ノ湖・大涌谷", "横浜・みなとみらい", "三浦半島・城ヶ島"],
+    "箱根・芦ノ湖・大涌谷": ["鎌倉・江ノ島", "横浜・みなとみらい", "熱海・伊豆・河津桜"],
+    "横浜・みなとみらい": ["鎌倉・江ノ島", "箱根・芦ノ湖・大涌谷", "三浦半島・城ヶ島"],
+    "浅草・上野・東京スカイツリー": ["新宿・渋谷・お台場", "明治神宮・表参道・原宿", "鎌倉・江ノ島"],
+    "新宿・渋谷・お台場": ["浅草・上野・東京スカイツリー", "明治神宮・表参道・原宿", "高尾山・横浜中華街・みなとみらい"],
+    "明治神宮・表参道・原宿": ["浅草・上野・東京スカイツリー", "新宿・渋谷・お台場", "高尾山・横浜中華街・みなとみらい"],
+    "高尾山・横浜中華街・みなとみらい": ["鎌倉・江ノ島", "箱根・芦ノ湖・大涌谷", "三浦半島・城ヶ島"],
+    "三浦半島・城ヶ島": ["鎌倉・江ノ島", "横浜・みなとみらい", "箱根・芦ノ湖・大涌谷"],
+    # 中部
+    "佐渡島・越後湯沢": ["弥彦神社・寺泊", "立山黒部アルペンルート", "松本城・善光寺"],
+    "弥彦神社・寺泊": ["佐渡島・越後湯沢", "立山黒部アルペンルート", "金沢・兼六園・ひがし茶屋街"],
+    "立山黒部アルペンルート": ["氷見・高岡の伏木", "金沢・兼六園・ひがし茶屋街", "上高地・乗鞍岳"],
+    "氷見・高岡の伏木": ["立山黒部アルペンルート", "金沢・兼六園・ひがし茶屋街", "輪島・白米千枚田"],
+    "金沢・兼六園・ひがし茶屋街": ["輪島・白米千枚田", "永平寺・東尋坊・越前ガニ", "立山黒部アルペンルート"],
+    "輪島・白米千枚田": ["金沢・兼六園・ひがし茶屋街", "永平寺・東尋坊・越前ガニ", "氷見・高岡の伏木"],
+    "永平寺・東尋坊・越前ガニ": ["金沢・兼六園・ひがし茶屋街", "一乗谷朝倉氏遺跡・越前海岸", "輪島・白米千枚田"],
+    "一乗谷朝倉氏遺跡・越前海岸": ["永平寺・東尋坊・越前ガニ", "金沢・兼六園・ひがし茶屋街", "輪島・白米千枚田"],
+    "昇仙峡・武田神社": ["富士山・富士五湖", "清里高原・西沢渓谷", "熱海・伊豆・河津桜"],
+    "富士山・富士五湖": ["昇仙峡・武田神社", "清里高原・西沢渓谷", "熱海・伊豆・河津桜"],
+    "清里高原・西沢渓谷": ["富士山・富士五湖", "昇仙峡・武田神社", "諏訪湖・白馬村"],
+    "熱海・伊豆・河津桜": ["富士山・富士五湖", "箱根・芦ノ湖・大涌谷", "浜松・浜名湖・舘山寺"],
+    "浜松・浜名湖・舘山寺": ["熱海・伊豆・河津桜", "浜松・浜名湖と寸又峡", "名古屋城・熱田神宮・名古屋メシ"],
+    "浜松・浜名湖と寸又峡": ["熱海・伊豆・河津桜", "浜松・浜名湖・舘山寺", "名古屋城・熱田神宮・名古屋メシ"],
+    "名古屋城・熱田神宮・名古屋メシ": ["犬山城・明治村", "犬山城・常滑", "伊勢神宮・鳥羽・志摩"],
+    "犬山城・明治村": ["名古屋城・熱田神宮・名古屋メシ", "犬山城・常滑", "岐阜城・長良川鵜飼"],
+    "犬山城・常滑": ["名古屋城・熱田神宮・名古屋メシ", "犬山城・明治村", "岐阜城・長良川鵜飼"],
+    "上高地・乗鞍岳": ["松本城・善光寺", "白馬・北アルプス", "飛騨高山・白川郷"],
+    "松本城・善光寺": ["上高地・乗鞍岳", "諏訪湖・白馬村", "白馬・北アルプス"],
+    "白馬・北アルプス": ["上高地・乗鞍岳", "松本城・善光寺", "立山黒部アルペンルート"],
+    "諏訪湖・白馬村": ["松本城・善光寺", "清里高原・西沢渓谷", "上高地・乗鞍岳"],
+    "飛騨高山・白川郷": ["岐阜城・長良川鵜飼", "上高地・乗鞍岳", "郡上八幡・恵那峡"],
+    "岐阜城・長良川鵜飼": ["飛騨高山・白川郷", "犬山城・明治村", "郡上八幡・恵那峡"],
+    "郡上八幡・恵那峡": ["飛騨高山・白川郷", "岐阜城・長良川鵜飼", "名古屋城・熱田神宮・名古屋メシ"],
+    "伊勢神宮・鳥羽・志摩": ["松阪・伊賀上野", "松阪・鈴鹿サーキット", "名古屋城・熱田神宮・名古屋メシ"],
+    "松阪・伊賀上野": ["伊勢神宮・鳥羽・志摩", "松阪・鈴鹿サーキット", "名古屋城・熱田神宮・名古屋メシ"],
+    "松阪・鈴鹿サーキット": ["伊勢神宮・鳥羽・志摩", "松阪・伊賀上野", "名古屋城・熱田神宮・名古屋メシ"],
+    # 近畿
+    "琵琶湖・彦根城・比叡山": ["長浜・竹生島", "京都・東山・祇園", "奈良・東大寺・春日大社"],
+    "長浜・竹生島": ["琵琶湖・彦根城・比叡山", "京都・東山・祇園", "金沢・兼六園・ひがし茶屋街"],
+    "京都・嵐山・嵯峨野": ["京都・東山・祇園", "宇治・天橋立・伏見稲荷", "大阪・道頓堀・通天閣"],
+    "京都・東山・祇園": ["京都・嵐山・嵯峨野", "宇治・天橋立・伏見稲荷", "奈良・東大寺・春日大社"],
+    "天橋立・伊根の舟屋": ["宇治・天橋立・伏見稲荷", "城崎温泉・竹田城跡", "城崎温泉・淡路島"],
+    "宇治・天橋立・伏見稲荷": ["京都・嵐山・嵯峨野", "京都・東山・祇園", "天橋立・伊根の舟屋"],
+    "奈良・東大寺・春日大社": ["吉野山・大峯奥駈道", "吉野山・飛鳥", "京都・東山・祇園"],
+    "吉野山・大峯奥駈道": ["奈良・東大寺・春日大社", "吉野山・飛鳥", "高野山・和歌山城"],
+    "吉野山・飛鳥": ["奈良・東大寺・春日大社", "吉野山・大峯奥駈道", "高野山・和歌山城"],
+    "高野山・和歌山城": ["白浜温泉・アドベンチャーワールド", "熊野古道・那智の滝", "吉野山・大峯奥駈道"],
+    "白浜温泉・アドベンチャーワールド": ["高野山・和歌山城", "熊野古道・那智の滝", "白浜温泉・那智勝浦"],
+    "白浜温泉・那智勝浦": ["高野山・和歌山城", "白浜温泉・アドベンチャーワールド", "熊野古道・那智の滝"],
+    "大阪・道頓堀・通天閣": ["万博記念公園・海遊館", "新世界・天保山・大阪城", "神戸・北野・有馬温泉"],
+    "万博記念公園・海遊館": ["大阪・道頓堀・通天閣", "新世界・天保山・大阪城", "神戸・北野・有馬温泉"],
+    "新世界・天保山・大阪城": ["大阪・道頓堀・通天閣", "万博記念公園・海遊館", "神戸・北野・有馬温泉"],
+    "神戸・北野・有馬温泉": ["姫路城・書写山圓教寺", "大阪・道頓堀・通天閣", "城崎温泉・淡路島"],
+    "姫路城・書写山圓教寺": ["神戸・北野・有馬温泉", "城崎温泉・竹田城跡", "後楽園・岡山城・倉敷美観地区"],
+    "城崎温泉・竹田城跡": ["天橋立・伊根の舟屋", "神戸・北野・有馬温泉", "城崎温泉・淡路島"],
+    "城崎温泉・淡路島": ["城崎温泉・竹田城跡", "天橋立・伊根の舟屋", "神戸・北野・有馬温泉"],
+    "熊野古道・那智の滝": ["高野山・和歌山城", "白浜温泉・アドベンチャーワールド", "白浜温泉・那智勝浦"],
+    # 中国
+    "鳥取砂丘・砂の美術館": ["大山・三朝温泉", "出雲大社・石見銀山", "後楽園・岡山城・倉敷美観地区"],
+    "大山・三朝温泉": ["鳥取砂丘・砂の美術館", "松江城・宍道湖・足立美術館", "後楽園・岡山城・倉敷美観地区"],
+    "出雲大社・石見銀山": ["松江城・宍道湖・足立美術館", "石見銀山・津和野", "鳥取砂丘・砂の美術館"],
+    "松江城・宍道湖・足立美術館": ["出雲大社・石見銀山", "石見銀山・津和野", "大山・三朝温泉"],
+    "石見銀山・津和野": ["出雲大社・石見銀山", "松江城・宍道湖・足立美術館", "萩城下町・秋吉台"],
+    "後楽園・岡山城・倉敷美観地区": ["蒜山高原・牛窓", "広島・宮島・厳島神社", "尾道・しまなみ海道"],
+    "蒜山高原・牛窓": ["後楽園・岡山城・倉敷美観地区", "大山・三朝温泉", "尾道・竹原"],
+    "広島・宮島・厳島神社": ["後楽園・岡山城・倉敷美観地区", "尾道・しまなみ海道", "尾道・竹原"],
+    "尾道・しまなみ海道": ["広島・宮島・厳島神社", "後楽園・岡山城・倉敷美観地区", "尾道・竹原"],
+    "尾道・竹原": ["尾道・しまなみ海道", "広島・宮島・厳島神社", "後楽園・岡山城・倉敷美観地区"],
+    "萩城下町・秋吉台": ["角島大橋・錦帯橋", "広島・宮島・厳島神社", "石見銀山・津和野"],
+    "角島大橋・錦帯橋": ["萩城下町・秋吉台", "広島・宮島・厳島神社", "尾道・しまなみ海道"],
+    # 四国
+    "祖谷のかずら橋・大歩危": ["鳴門の渦潮・阿波踊り", "祖谷渓・剣山", "こんぴらさん・栗林公園"],
+    "祖谷渓・剣山": ["祖谷のかずら橋・大歩危", "鳴門の渦潮・阿波踊り", "高知・桂浜・四万十川"],
+    "鳴門の渦潮・阿波踊り": ["祖谷のかずら橋・大歩危", "こんぴらさん・栗林公園", "小豆島・父母ヶ浜"],
+    "こんぴらさん・栗林公園": ["小豆島・父母ヶ浜", "鳴門の渦潮・阿波踊り", "道後温泉・松山城"],
+    "小豆島・父母ヶ浜": ["こんぴらさん・栗林公園", "鳴門の渦潮・阿波踊り", "道後温泉・松山城"],
+    "松山・今治・しまなみ海道（愛媛側）": ["道後温泉・松山城", "しまなみ海道・内子", "こんぴらさん・栗林公園"],
+    "道後温泉・松山城": ["松山・今治・しまなみ海道（愛媛側）", "しまなみ海道・内子", "こんぴらさん・栗林公園"],
+    "しまなみ海道・内子": ["松山・今治・しまなみ海道（愛媛側）", "道後温泉・松山城", "尾道・しまなみ海道"],
+    "高知・桂浜・四万十川": ["室戸岬・龍河洞", "こんぴらさん・栗林公園", "道後温泉・松山城"],
+    "室戸岬・龍河洞": ["高知・桂浜・四万十川", "祖谷のかずら橋・大歩危", "こんぴらさん・栗林公園"],
+    # 九州
+    "博多・太宰府・柳川": ["北九州・門司港レトロ", "門司港レトロ・糸島", "嬉野温泉・吉野ヶ里遺跡"],
+    "北九州・門司港レトロ": ["博多・太宰府・柳川", "門司港レトロ・糸島", "嬉野温泉・吉野ヶ里遺跡"],
+    "門司港レトロ・糸島": ["博多・太宰府・柳川", "北九州・門司港レトロ", "嬉野温泉・吉野ヶ里遺跡"],
+    "嬉野温泉・吉野ヶ里遺跡": ["博多・太宰府・柳川", "長崎・グラバー園・軍艦島", "唐津城・呼子"],
+    "唐津城・呼子": ["嬉野温泉・吉野ヶ里遺跡", "博多・太宰府・柳川", "長崎・グラバー園・軍艦島"],
+    "長崎・グラバー園・軍艦島": ["ハウステンボス・五島列島", "嬉野温泉・吉野ヶ里遺跡", "唐津城・呼子"],
+    "ハウステンボス・五島列島": ["長崎・グラバー園・軍艦島", "嬉野温泉・吉野ヶ里遺跡", "天草・五橋・崎津集落"],
+    "熊本城・阿蘇山": ["天草・五橋・崎津集落", "天草・黒川温泉", "別府温泉・由布院"],
+    "天草・五橋・崎津集落": ["熊本城・阿蘇山", "天草・黒川温泉", "長崎・グラバー園・軍艦島"],
+    "天草・黒川温泉": ["熊本城・阿蘇山", "天草・五橋・崎津集落", "別府温泉・由布院"],
+    "別府温泉・由布院": ["熊本城・阿蘇山", "耶馬渓・臼杵石仏", "高千穂峡・青島神社"],
+    "耶馬渓・臼杵石仏": ["別府温泉・由布院", "高千穂峡・青島神社", "熊本城・阿蘇山"],
+    "高千穂峡・青島神社": ["別府温泉・由布院", "飫肥城・日向岬", "桜島・指宿温泉・知覧"],
+    "飫肥城・日向岬": ["高千穂峡・青島神社", "桜島・指宿温泉・知覧", "霧島温泉・霧島神宮"],
+    "桜島・指宿温泉・知覧": ["霧島温泉・霧島神宮", "霧島温泉・奄美大島", "屋久島・縄文杉"],
+    "霧島温泉・霧島神宮": ["桜島・指宿温泉・知覧", "霧島温泉・奄美大島", "高千穂峡・青島神社"],
+    "霧島温泉・奄美大島": ["桜島・指宿温泉・知覧", "霧島温泉・霧島神宮", "奄美大島"],
+    "奄美大島": ["霧島温泉・奄美大島", "桜島・指宿温泉・知覧", "屋久島・縄文杉"],
+    "屋久島・縄文杉": ["桜島・指宿温泉・知覧", "霧島温泉・霧島神宮", "奄美大島"],
+    # 沖縄
+    "那覇・首里城・国際通り": ["美ら海水族館・今帰仁城", "やんばる・辺戸岬", "古宇利島・備瀬のフクギ並木"],
+    "美ら海水族館・今帰仁城": ["那覇・首里城・国際通り", "やんばる・辺戸岬", "古宇利島・備瀬のフクギ並木"],
+    "石垣島・竹富島・西表島": ["宮古島・与那覇前浜", "久米島", "那覇・首里城・国際通り"],
+    "宮古島・与那覇前浜": ["石垣島・竹富島・西表島", "久米島", "那覇・首里城・国際通り"],
+    "やんばる・辺戸岬": ["美ら海水族館・今帰仁城", "古宇利島・備瀬のフクギ並木", "那覇・首里城・国際通り"],
+    "古宇利島・備瀬のフクギ並木": ["美ら海水族館・今帰仁城", "やんばる・辺戸岬", "那覇・首里城・国際通り"],
+    "久米島": ["宮古島・与那覇前浜", "那覇・首里城・国際通り", "石垣島・竹富島・西表島"],
+}
+
+for _spot in SPOTS:
+    _spot["nearby"] = _NEARBY.get(_spot["name"], [])
 
 # ─────────────────────────────────────────────
 #  雨の日の代替スポット（各スポットに rainy_alternatives キーを付与）
@@ -1194,6 +1913,10 @@ _RAINY = {
     "足利フラワーパーク・佐野": [
         {"name": "足利学校", "category": "歴史建築", "desc": "日本最古の学校といわれる屋内見学可能な史跡。"},
         {"name": "佐野プレミアム・アウトレット", "category": "ショッピング", "desc": "佐野市のアウトレットモール。雨天でも屋内通路で買い物可能。"},
+    ],
+    "足利フラワーパーク・益子焼": [
+        {"name": "足利学校", "category": "歴史建築", "desc": "日本最古の学校といわれる屋内見学可能な史跡。足利市中心部に位置しアクセス良好。"},
+        {"name": "益子陶芸美術館", "category": "美術館", "desc": "益子焼の名品を収蔵する屋内美術館。陶芸家・濱田庄司の作品も展示。"},
     ],
     "草津温泉・尾瀬ヶ原": [
         {"name": "草津温泉 大滝乃湯・御座之湯", "category": "温泉施設", "desc": "草津温泉を代表する屋内入浴施設。湯畑徒歩圏で雨天でも利用可能。"},
@@ -1672,19 +2395,4 @@ _RAINY = {
 for _spot in SPOTS:
     _spot["rainy_alternatives"] = _RAINY.get(_spot["name"], [])
 
-# ─────────────────────────────────────────────
-#  定数
-# ─────────────────────────────────────────────
-ALL_REGIONS = ["全国", "北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州", "沖縄"]
-ALL_CATEGORIES = sorted({cat for spot in SPOTS for cat in spot["category"]})
-SEASON_EMOJI = {"春": "🌸", "夏": "☀️", "秋": "🍁", "冬": "❄️"}
-CATEGORY_EMOJI = {
-    "歴史・文化": "🏯",
-    "自然・絶景": "🏔️",
-    "アウトドア": "🥾",
-    "グルメ": "🍜",
-    "温泉・癒し": "♨️",
-    "世界遺産": "🌏",
-    "夜景": "🌃",
-}
-REGION_ORDER = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州", "沖縄"]
+# print(f"総スポット数: {len(SPOTS)}")

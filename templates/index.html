@@ -69,8 +69,8 @@
 
     <div class="ad-space">
         <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow">
-        <img border="0" width="100" height="60" alt="" src="https://www21.a8.net/svt/bgt?aid=260420318003&amp;wid=002&amp;eno=01&amp;mid=s00000005230001016000&amp;mc=1"></a>
-        <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="">
+        <img border="0" width="100" height="60" alt="" src="https://www25.a8.net/svt/bgt?aid=260420318003&amp;wid=002&amp;eno=01&amp;mid=s00000005230001016000&amp;mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="">
     </div>
 </div>
 
@@ -81,19 +81,159 @@
     <button id="loadListBtn" class="spin-btn secondary">📋 一覧を読み込む</button>
     <div id="spotList"></div>
 </div>
+
+<!-- ═══════════════════════════════════
+     サイトの使い方
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:2rem;">
+    <h2 class="home-section-title">📖 このサイトの使い方</h2>
+    <p class="home-section-text">
+        「旅行プラン ルーレット」は、<strong>どこに行こうか迷ったとき</strong>のヒントをくれる旅行先提案ツールです。
+        🎲 ボタンを押すだけで全国47都道府県・100スポット以上からランダムに旅行先を提案。
+        地方・カテゴリ（歴史、自然、グルメ、温泉など）・季節でフィルタリングすることで、
+        「春に東北で温泉」「夏に沖縄でアウトドア」のような希望に合わせた提案も可能です。
+        気に入ったスポットはじゃらんnetで周辺ホテルを検索して、旅行計画を完成させましょう！
+    </p>
+    <div class="how-to-steps">
+        <div class="step-item"><span class="step-num">1</span><span>地方・カテゴリ・季節でフィルター設定</span></div>
+        <div class="step-item"><span class="step-num">2</span><span>🎲 ボタンでランダム提案を実行</span></div>
+        <div class="step-item"><span class="step-num">3</span><span>気に入ったスポットのホテルを検索</span></div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     今月のおすすめスポット
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">
+        {% if current_season == '春' %}🌸{% elif current_season == '夏' %}☀️{% elif current_season == '秋' %}🍁{% else %}❄️{% endif %}
+        今の季節（{{ current_season }}）のおすすめスポット
+    </h2>
+    <p class="home-section-text">{{ current_month }}月に訪れるのにおすすめな、全国各地のスポットをピックアップしました。</p>
+    <div class="recommended-grid">
+        {% for s in recommended_spots %}
+        <a href="/spots/{{ s.id }}" class="rec-card">
+            <div class="rec-region">{{ s.region }}地方</div>
+            <div class="rec-name">{{ s.name }}</div>
+            <div class="rec-pref">📍 {{ s.pref }}</div>
+            <div class="rec-tags">
+                {% for cat in s.category[:2] %}
+                <span class="nearby-tag">{{ category_emoji.get(cat, '') }} {{ cat }}</span>
+                {% endfor %}
+            </div>
+            <p class="rec-desc">{{ s.desc[:60] }}{% if s.desc|length > 60 %}…{% endif %}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     カテゴリ別人気スポット
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">🏷️ カテゴリ別スポット</h2>
+    <p class="home-section-text">興味のあるカテゴリから旅行先を探してみましょう。</p>
+    <div class="category-feature-grid">
+        {% for cat, s in category_featured.items() %}
+        <a href="/spots/category/{{ cat | urlencode }}" class="cat-feature-card">
+            <div class="cat-feature-icon">{{ category_emoji.get(cat, '🗾') }}</div>
+            <div class="cat-feature-name">{{ cat }}</div>
+            <div class="cat-feature-example">例: {{ s.name }}</div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     地方別一覧リンク
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">🗾 地方別スポット一覧</h2>
+    <div class="region-nav-grid">
+        {% for r in ['北海道', '東北', '関東', '中部', '近畿', '中国', '四国', '九州', '沖縄'] %}
+        <a href="/spots/region/{{ r | urlencode }}" class="region-nav-btn">{{ r }}</a>
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
 
 {% block scripts %}
 <script>
 // ═══════════════════════════════════════════════════
-//  HTML生成ヘルパー（DOM不要のため外側に定義）
+//  定数・状態管理
 // ═══════════════════════════════════════════════════
 const SEASON_EMOJI = { "春": "🌸", "夏": "☀️", "秋": "🍁", "冬": "❄️" };
 const CATEGORY_EMOJI = {
     "歴史・文化": "🏯", "自然・絶景": "🏔️", "アウトドア": "🥾",
     "グルメ": "🍜", "温泉・癒し": "♨️", "世界遺産": "🌏", "夜景": "🌃",
 };
+let selectedSeason = "";
+let listLoaded = false;  // 一覧を一度だけ読み込むためのフラグ
 
+// ═══════════════════════════════════════════════════
+//  フィルター値の取得
+// ═══════════════════════════════════════════════════
+function getFilterParams() {
+    const region = document.getElementById("regionSelect").value;
+    const checkedCats = [...document.querySelectorAll(".cat-checkbox:checked")].map(cb => cb.value);
+    return {
+        region,
+        category: checkedCats.join(","),
+        season: selectedSeason,
+    };
+}
+
+function buildQueryString(params) {
+    return new URLSearchParams(Object.fromEntries(
+        Object.entries(params).filter(([, v]) => v !== "")
+    )).toString();
+}
+
+// ═══════════════════════════════════════════════════
+//  季節ボタンの切り替え
+// ═══════════════════════════════════════════════════
+document.querySelectorAll(".season-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".season-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedSeason = btn.dataset.season;
+        // フィルターが変わったら一覧のキャッシュをリセット
+        listLoaded = false;
+        document.getElementById("spotList").innerHTML = "";
+        document.getElementById("loadListBtn").style.display = "block";
+    });
+});
+
+// フィルター変更時に一覧キャッシュをリセット
+document.getElementById("regionSelect").addEventListener("change", () => {
+    listLoaded = false;
+    document.getElementById("spotList").innerHTML = "";
+    document.getElementById("loadListBtn").style.display = "block";
+});
+document.querySelectorAll(".cat-checkbox").forEach(cb => {
+    cb.addEventListener("change", () => {
+        listLoaded = false;
+        document.getElementById("spotList").innerHTML = "";
+        document.getElementById("loadListBtn").style.display = "block";
+    });
+});
+
+// ═══════════════════════════════════════════════════
+//  タブ切り替え
+// ═══════════════════════════════════════════════════
+document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+    });
+});
+
+// ═══════════════════════════════════════════════════
+//  スポットカードのHTML生成
+// ═══════════════════════════════════════════════════
 function buildCategoryTags(categories) {
     return categories.map(c =>
         `<span class="tag">${CATEGORY_EMOJI[c] || ""} ${c}</span>`
@@ -112,27 +252,57 @@ function buildHighlightTags(highlights) {
     return highlights.map(h => `<span class="highlight-tag">${h}</span>`).join("");
 }
 
-function buildRainySection(rainyAlternatives) {
-    if (!rainyAlternatives || rainyAlternatives.length === 0) return "";
-    const cards = rainyAlternatives.map(alt => `
-        <div class="rainy-card">
-            <span class="rainy-badge">${alt.category || "施設"}</span>
-            <p class="rainy-name">${alt.name}</p>
-            <p class="rainy-desc">${alt.desc}</p>
-        </div>`).join("");
-    return `
-        <div class="rainy-section">
-            <h4>☔ 雨の日はこちら</h4>
-            <div class="rainy-list">${cards}</div>
-        </div>`;
+function buildLinkButtons(links) {
+    return links.map(lk =>
+        `<a href="${lk.url}" target="_blank" rel="noopener noreferrer" class="link-btn">${lk.label}</a>`
+    ).join("");
 }
 
-function buildLinkButtons(links) {
-    return links.map(lk => {
-        const cls = lk.affiliate ? "btn-affiliate" : "link-btn";
-        const rel = lk.affiliate ? "nofollow noopener noreferrer" : "noopener noreferrer";
-        return `<a href="${lk.url}" target="_blank" rel="${rel}" class="${cls}">${lk.label}</a>`;
+// ═══════════════════════════════════════════════════
+//  ランダム提案ボタン
+// ═══════════════════════════════════════════════════
+document.getElementById("spinBtn").addEventListener("click", async () => {
+    const params = getFilterParams();
+    const qs = buildQueryString(params);
+    const cardEl = document.getElementById("spotCard");
+
+    cardEl.innerHTML = '<p class="loading">🎲 旅行先を探し中...</p>';
+
+    try {
+        const res = await fetch(`/api/random?${qs}`);
+        if (!res.ok) {
+            const err = await res.json();
+            cardEl.innerHTML = `<p class="error-msg">⚠️ ${err.error || "エラーが発生しました"}</p>`;
+            return;
+        }
+        const spot = await res.json();
+        cardEl.innerHTML = buildSpotCard(spot);
+        cardEl.querySelector(".spot-card").classList.add("fade-in");
+        attachNearbyHandlers(cardEl);
+    } catch (e) {
+        cardEl.innerHTML = '<p class="error-msg">⚠️ 通信エラーが発生しました。しばらく待ってから再度お試しください。</p>';
+    }
+});
+
+function buildNearbySection(nearbyDetails) {
+    if (!nearbyDetails || nearbyDetails.length === 0) return "";
+    const cards = nearbyDetails.map(s => {
+        const cats = s.category.slice(0, 2).map(c =>
+            `<span class="nearby-tag">${CATEGORY_EMOJI[c] || ""} ${c}</span>`
+        ).join("");
+        return `
+        <div class="nearby-card">
+            <div class="nearby-name">${s.name}</div>
+            <div class="nearby-pref">📍 ${s.pref}</div>
+            <div class="nearby-tags">${cats}</div>
+            <button class="nearby-btn" data-spotname="${s.name.replace(/"/g, '&quot;')}">このスポットを見る</button>
+        </div>`;
     }).join("");
+    return `
+    <div class="nearby-section">
+        <div class="nearby-title">📍 周辺のおすすめ観光地</div>
+        <div class="nearby-grid">${cards}</div>
+    </div>`;
 }
 
 function buildSpotCard(spot) {
@@ -148,11 +318,135 @@ function buildSpotCard(spot) {
         <div class="spot-actions">
             ${buildLinkButtons(spot.links)}
             <a href="${spot.map_url}" target="_blank" rel="noopener noreferrer" class="link-btn map-btn">🗺️ Googleマップ</a>
+            ${spot.spot_url ? `<a href="${spot.spot_url}" class="link-btn detail-btn">📄 詳細ページ</a>` : ''}
         </div>
-        ${buildRainySection(spot.rainy_alternatives)}
-        <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow">
-        <img border="0" width="100" height="60" alt="" src="https://www21.a8.net/svt/bgt?aid=260420318003&wid=002&eno=01&mid=s00000005230001016000&mc=1"></a>
-        <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow" target="_blank" class="jalan-btn">
+            🏨 周辺のホテルを探す（じゃらん）
+        </a>
+        <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="" style="display:none;">
+        ${buildNearbySection(spot.nearby_details)}
+        ${(() => {
+            if (!spot.rainy_alternatives || spot.rainy_alternatives.length === 0) return '';
+            return `
+        <div class="rainy-section">
+            <h4>☔ 雨の日はこちら</h4>
+            <div class="rainy-list">
+                ${spot.rainy_alternatives.map(r => `
+                    <div class="rainy-card">
+                        <span class="rainy-badge">${r.category}</span>
+                        <p class="rainy-name">${r.name}</p>
+                        <p class="rainy-desc">${r.desc}</p>
+                    </div>
+                `).join('')}
+            </div>
+        </div>`;
+        })()}
+    </div>`;
+}
+
+async function loadSpotByName(name) {
+    const cardEl = document.getElementById("spotCard");
+    cardEl.innerHTML = '<p class="loading">🎲 旅行先を探し中...</p>';
+    // タブをランダム提案に切り替え
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+    document.querySelector('[data-tab="roulette"]').classList.add("active");
+    document.getElementById("tab-roulette").classList.add("active");
+    try {
+        const res = await fetch(`/api/spot_by_name?name=${encodeURIComponent(name)}`);
+        if (!res.ok) {
+            const err = await res.json();
+            cardEl.innerHTML = `<p class="error-msg">⚠️ ${err.error || "エラーが発生しました"}</p>`;
+            return;
+        }
+        const spot = await res.json();
+        cardEl.innerHTML = buildSpotCard(spot);
+        cardEl.querySelector(".spot-card").classList.add("fade-in");
+        cardEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        attachNearbyHandlers(cardEl);
+    } catch (e) {
+        cardEl.innerHTML = '<p class="error-msg">⚠️ 通信エラーが発生しました。</p>';
+    }
+}
+
+function attachNearbyHandlers(root) {
+    root.querySelectorAll(".nearby-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            loadSpotByName(btn.dataset.spotname);
+        });
+    });
+}
+
+// ═══════════════════════════════════════════════════
+//  一覧の読み込み
+// ═══════════════════════════════════════════════════
+document.getElementById("loadListBtn").addEventListener("click", async () => {
+    if (listLoaded) return;
+
+    const params = getFilterParams();
+    const qs = buildQueryString(params);
+    const listEl = document.getElementById("spotList");
+    const loadBtn = document.getElementById("loadListBtn");
+
+    listEl.innerHTML = '<p class="loading">📋 一覧を読み込み中...</p>';
+
+    try {
+        const res = await fetch(`/api/spots?${qs}`);
+        if (!res.ok) {
+            const err = await res.json();
+            listEl.innerHTML = `<p class="error-msg">⚠️ ${err.error || "エラーが発生しました"}</p>`;
+            return;
+        }
+        const data = await res.json();
+
+        let html = `<p class="list-count">対象スポット: <strong>${data.total}</strong>件</p>`;
+
+        for (const [regionName, spots] of Object.entries(data.regions)) {
+            html += `<h2 class="region-heading">📍 ${regionName}（${spots.length}件）</h2>`;
+            html += `<div class="accordion-list">`;
+            spots.forEach(spot => {
+                html += buildAccordionItem(spot);
+            });
+            html += `</div>`;
+        }
+
+        listEl.innerHTML = html;
+        loadBtn.style.display = "none";
+        listLoaded = true;
+
+        // アコーディオンの動作を設定
+        listEl.querySelectorAll(".accordion-header").forEach(header => {
+            header.addEventListener("click", () => {
+                const item = header.parentElement;
+                item.classList.toggle("open");
+            });
+        });
+
+        // 一覧内の周辺スポットボタン
+        attachNearbyHandlers(listEl);
+    } catch (e) {
+        listEl.innerHTML = '<p class="error-msg">⚠️ 通信エラーが発生しました。しばらく待ってから再度お試しください。</p>';
+    }
+});
+
+function buildAccordionNearby(nearbyDetails) {
+    if (!nearbyDetails || nearbyDetails.length === 0) return "";
+    const cards = nearbyDetails.map(s => {
+        const cats = s.category.slice(0, 2).map(c =>
+            `<span class="nearby-tag">${CATEGORY_EMOJI[c] || ""} ${c}</span>`
+        ).join("");
+        return `
+        <div class="nearby-card">
+            <div class="nearby-name">${s.name}</div>
+            <div class="nearby-pref">📍 ${s.pref}</div>
+            <div class="nearby-tags">${cats}</div>
+            <button class="nearby-btn" data-spotname="${s.name.replace(/"/g, '&quot;')}">このスポットを見る</button>
+        </div>`;
+    }).join("");
+    return `
+    <div class="accordion-nearby nearby-section">
+        <div class="nearby-title">📍 周辺のおすすめ観光地</div>
+        <div class="nearby-grid">${cards}</div>
     </div>`;
 }
 
@@ -177,142 +471,31 @@ function buildAccordionItem(spot) {
             <div class="accordion-actions">
                 ${buildLinkButtons(spot.links)}
                 <a href="${spot.map_url}" target="_blank" rel="noopener noreferrer" class="link-btn map-btn">🗺️ Googleマップ</a>
+                ${spot.spot_url ? `<a href="${spot.spot_url}" class="link-btn detail-btn">📄 詳細ページ</a>` : ''}
             </div>
-            ${buildRainySection(spot.rainy_alternatives)}
-            <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow">
-            <img border="0" width="100" height="60" alt="" src="https://www21.a8.net/svt/bgt?aid=260420318003&wid=002&eno=01&mid=s00000005230001016000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow" target="_blank" class="jalan-btn">
+                🏨 周辺のホテルを探す（じゃらん）
+            </a>
+            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1PLQ+1SCD6+14CS+61RI9" alt="" style="display:none;">
+            ${buildAccordionNearby(spot.nearby_details)}
+            ${(() => {
+                if (!spot.rainy_alternatives || spot.rainy_alternatives.length === 0) return '';
+                return `
+            <div class="rainy-section">
+                <h4>☔ 雨の日はこちら</h4>
+                <div class="rainy-list">
+                    ${spot.rainy_alternatives.map(r => `
+                        <div class="rainy-card">
+                            <span class="rainy-badge">${r.category}</span>
+                            <p class="rainy-name">${r.name}</p>
+                            <p class="rainy-desc">${r.desc}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>`;
+            })()}
         </div>
     </div>`;
 }
-
-// ═══════════════════════════════════════════════════
-//  DOM操作はすべて DOMContentLoaded 内で実行
-// ═══════════════════════════════════════════════════
-document.addEventListener("DOMContentLoaded", function () {
-    let selectedSeason = "";
-    let listLoaded = false;
-
-    // ── フィルター値の取得 ──
-    function getFilterParams() {
-        const region = document.getElementById("regionSelect").value;
-        const checkedCats = [...document.querySelectorAll(".cat-checkbox:checked")].map(cb => cb.value);
-        return {
-            region,
-            category: checkedCats.join(","),
-            season: selectedSeason,
-        };
-    }
-
-    function buildQueryString(params) {
-        return new URLSearchParams(Object.fromEntries(
-            Object.entries(params).filter(([, v]) => v !== "")
-        )).toString();
-    }
-
-    // ── 季節ボタンの切り替え ──
-    document.querySelectorAll(".season-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            document.querySelectorAll(".season-btn").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            selectedSeason = btn.dataset.season;
-            listLoaded = false;
-            document.getElementById("spotList").innerHTML = "";
-            document.getElementById("loadListBtn").style.display = "block";
-        });
-    });
-
-    // ── フィルター変更時に一覧キャッシュをリセット ──
-    document.getElementById("regionSelect").addEventListener("change", () => {
-        listLoaded = false;
-        document.getElementById("spotList").innerHTML = "";
-        document.getElementById("loadListBtn").style.display = "block";
-    });
-    document.querySelectorAll(".cat-checkbox").forEach(cb => {
-        cb.addEventListener("change", () => {
-            listLoaded = false;
-            document.getElementById("spotList").innerHTML = "";
-            document.getElementById("loadListBtn").style.display = "block";
-        });
-    });
-
-    // ── タブ切り替え ──
-    document.querySelectorAll(".tab-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-            document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
-            btn.classList.add("active");
-            document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
-        });
-    });
-
-    // ── ランダム提案ボタン ──
-    document.getElementById("spinBtn").addEventListener("click", async () => {
-        const params = getFilterParams();
-        const qs = buildQueryString(params);
-        const cardEl = document.getElementById("spotCard");
-
-        cardEl.innerHTML = '<p class="loading">🎲 旅行先を探し中...</p>';
-
-        try {
-            const res = await fetch(`/api/random?${qs}`);
-            if (!res.ok) {
-                const err = await res.json();
-                cardEl.innerHTML = `<p class="error-msg">⚠️ ${err.error || "エラーが発生しました"}</p>`;
-                return;
-            }
-            const spot = await res.json();
-            cardEl.innerHTML = buildSpotCard(spot);
-            cardEl.querySelector(".spot-card").classList.add("fade-in");
-        } catch (e) {
-            cardEl.innerHTML = '<p class="error-msg">⚠️ 通信エラーが発生しました。しばらく待ってから再度お試しください。</p>';
-        }
-    });
-
-    // ── 一覧の読み込み ──
-    document.getElementById("loadListBtn").addEventListener("click", async () => {
-        if (listLoaded) return;
-
-        const params = getFilterParams();
-        const qs = buildQueryString(params);
-        const listEl = document.getElementById("spotList");
-        const loadBtn = document.getElementById("loadListBtn");
-
-        listEl.innerHTML = '<p class="loading">📋 一覧を読み込み中...</p>';
-
-        try {
-            const res = await fetch(`/api/spots?${qs}`);
-            if (!res.ok) {
-                const err = await res.json();
-                listEl.innerHTML = `<p class="error-msg">⚠️ ${err.error || "エラーが発生しました"}</p>`;
-                return;
-            }
-            const data = await res.json();
-
-            let html = `<p class="list-count">対象スポット: <strong>${data.total}</strong>件</p>`;
-
-            for (const [regionName, spots] of Object.entries(data.regions)) {
-                html += `<h2 class="region-heading">📍 ${regionName}（${spots.length}件）</h2>`;
-                html += `<div class="accordion-list">`;
-                spots.forEach(spot => {
-                    html += buildAccordionItem(spot);
-                });
-                html += `</div>`;
-            }
-
-            listEl.innerHTML = html;
-            loadBtn.style.display = "none";
-            listLoaded = true;
-
-            listEl.querySelectorAll(".accordion-header").forEach(header => {
-                header.addEventListener("click", () => {
-                    header.parentElement.classList.toggle("open");
-                });
-            });
-        } catch (e) {
-            listEl.innerHTML = '<p class="error-msg">⚠️ 通信エラーが発生しました。しばらく待ってから再度お試しください。</p>';
-        }
-    });
-});
 </script>
 {% endblock %}
