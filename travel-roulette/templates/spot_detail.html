@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block title %}{{ spot.name }}（{{ spot.pref }}）の観光情報{% endblock %}
+{% block description %}{{ spot.desc }}。{{ spot.pref }}のおすすめ観光スポット「{{ spot.name }}」の見どころ・アクセス・周辺ホテル情報をまとめました。{% endblock %}
+
+{% block content %}
+
+<!-- ═══════════════════════════════════
+     パンくずリスト
+     ═══════════════════════════════════ -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb-list">
+        {% for label, href in breadcrumb %}
+        <li class="breadcrumb-item">
+            {% if href %}
+            <a href="{{ href }}">{{ label }}</a>
+            {% else %}
+            <span aria-current="page">{{ label }}</span>
+            {% endif %}
+            {% if not loop.last %}<span class="breadcrumb-sep">›</span>{% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+</nav>
+
+<!-- ═══════════════════════════════════
+     ヘッダーカード
+     ═══════════════════════════════════ -->
+<div class="content-card spot-detail-header">
+    <div class="detail-region-badge">{{ spot.region }}地方</div>
+    <h1 class="detail-spot-name">{{ spot.name }}</h1>
+    <p class="detail-spot-pref">📍 {{ spot.pref }}</p>
+
+    <!-- カテゴリタグ -->
+    <div class="detail-tags">
+        {% for cat in spot.category %}
+        <a href="/spots/category/{{ cat | urlencode }}" class="tag tag-link">
+            {{ category_emoji.get(cat, '') }} {{ cat }}
+        </a>
+        {% endfor %}
+    </div>
+
+    <!-- おすすめ季節 -->
+    <div class="detail-seasons">
+        {% for s in ['春', '夏', '秋', '冬'] %}
+        <span class="season-badge {% if s in spot.seasons %}season-good{% else %}season-off{% endif %}">
+            {{ season_emoji.get(s, '') }} {{ s }}
+        </span>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     詳細説明
+     ═══════════════════════════════════ -->
+<div class="content-card">
+    <section class="content-section">
+        <h2>🗾 見どころ・詳細情報</h2>
+        {% for para in extended_desc.split('\n\n') %}
+        <p>{{ para }}</p>
+        {% endfor %}
+    </section>
+
+    <section class="content-section">
+        <h2>✨ 主な見どころ</h2>
+        <div class="highlight-tags">
+            {% for h in spot.highlights %}
+            <span class="highlight-tag">{{ h }}</span>
+            {% endfor %}
+        </div>
+    </section>
+
+    {% if spot.links %}
+    <section class="content-section">
+        <h2>🔗 公式・関連サイト</h2>
+        <div class="spot-actions">
+            {% for lk in spot.links %}
+            <a href="{{ lk.url }}" target="_blank" rel="noopener noreferrer" class="link-btn">
+                {{ lk.label }}
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+
+<!-- ═══════════════════════════════════
+     アクセス・Googleマップ
+     ═══════════════════════════════════ -->
+<div class="content-card">
+    <section class="content-section">
+        <h2>🗺️ アクセス情報</h2>
+        <p>
+            {{ spot.name }}は{{ spot.pref }}に位置しています。
+            詳細なルートや電車・バスの時刻は以下のGoogleマップでご確認ください。
+            お車でお越しの場合は、現地周辺の駐車場情報も合わせてご確認ください。
+        </p>
+        <div class="access-buttons">
+            <a href="{{ map_url }}" target="_blank" rel="noopener noreferrer" class="link-btn map-btn">
+                🗺️ Googleマップで経路を確認
+            </a>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     じゃらん ホテル検索
+     ═══════════════════════════════════ -->
+<div class="content-card">
+    <section class="content-section">
+        <h2>🏨 周辺のホテルを探す</h2>
+        <p>
+            {{ pref_short }}周辺の宿泊施設をじゃらんnetで検索できます。
+            観光スポット近くに泊まって、朝早くや夕暮れ時の特別な景色もお楽しみください。
+        </p>
+        <a href="{{ jalan_url }}" target="_blank" rel="noopener noreferrer" class="jalan-btn">
+            🏨 {{ pref_short }}周辺のホテルを探す（じゃらん）
+        </a>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════
+     広告枠
+     ═══════════════════════════════════ -->
+<div class="ad-space">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5689524720836884"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- ═══════════════════════════════════
+     周辺おすすめ観光地
+     ═══════════════════════════════════ -->
+{% if nearby_details %}
+<div class="content-card">
+    <section class="content-section">
+        <h2>📍 周辺のおすすめ観光地</h2>
+        <p>{{ spot.name }}と合わせて訪れたい周辺スポットです。</p>
+        <div class="related-spots-grid">
+            {% for s in nearby_details %}
+            <a href="/spots/{{ s.id }}" class="related-spot-card">
+                <div class="related-spot-name">{{ s.name }}</div>
+                <div class="related-spot-pref">📍 {{ s.pref }}</div>
+                <div class="related-spot-tags">
+                    {% for cat in s.category[:2] %}
+                    <span class="nearby-tag">{{ category_emoji.get(cat, '') }} {{ cat }}</span>
+                    {% endfor %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+{% endif %}
+
+<!-- ═══════════════════════════════════
+     同じ都道府県のスポット
+     ═══════════════════════════════════ -->
+{% if related_pref %}
+<div class="content-card">
+    <section class="content-section">
+        <h2>🗺️ {{ pref_short }}の他のスポット</h2>
+        <div class="related-spots-grid">
+            {% for s in related_pref %}
+            <a href="/spots/{{ s.id }}" class="related-spot-card">
+                <div class="related-spot-name">{{ s.name }}</div>
+                <div class="related-spot-pref">📍 {{ s.pref }}</div>
+                <div class="related-spot-tags">
+                    {% for cat in s.category[:2] %}
+                    <span class="nearby-tag">{{ category_emoji.get(cat, '') }} {{ cat }}</span>
+                    {% endfor %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="view-all-link">
+            <a href="/spots/prefecture/{{ pref_short | urlencode }}" class="link-btn">
+                {{ pref_short }}のスポットをもっと見る →
+            </a>
+        </div>
+    </section>
+</div>
+{% endif %}
+
+<!-- ═══════════════════════════════════
+     同じカテゴリのスポット
+     ═══════════════════════════════════ -->
+{% if related_cat %}
+<div class="content-card">
+    <section class="content-section">
+        <h2>🏷️ 同じカテゴリ「{{ spot.category[0] }}」のスポット</h2>
+        <div class="related-spots-grid">
+            {% for s in related_cat %}
+            <a href="/spots/{{ s.id }}" class="related-spot-card">
+                <div class="related-spot-name">{{ s.name }}</div>
+                <div class="related-spot-pref">📍 {{ s.pref }}</div>
+                <div class="related-spot-tags">
+                    {% for cat in s.category[:2] %}
+                    <span class="nearby-tag">{{ category_emoji.get(cat, '') }} {{ cat }}</span>
+                    {% endfor %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="view-all-link">
+            <a href="/spots/category/{{ spot.category[0] | urlencode }}" class="link-btn">
+                「{{ spot.category[0] }}」スポットをもっと見る →
+            </a>
+        </div>
+    </section>
+</div>
+{% endif %}
+
+<!-- ═══════════════════════════════════
+     ルーレットへの誘導
+     ═══════════════════════════════════ -->
+<div class="content-card cta-card">
+    <h2>🎲 他の旅行先をランダムに探す</h2>
+    <p>全国47都道府県・100スポット以上からランダムに旅行先を提案します。地方・カテゴリ・季節で絞り込みもできます。</p>
+    <a href="/" class="spin-btn" style="display:inline-block; width:auto; padding: 0.8rem 2rem; text-decoration:none;">
+        🎲 ルーレットを試す
+    </a>
+</div>
+
+{% endblock %}

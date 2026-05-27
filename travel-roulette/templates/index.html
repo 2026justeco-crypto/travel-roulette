@@ -81,6 +81,81 @@
     <button id="loadListBtn" class="spin-btn secondary">📋 一覧を読み込む</button>
     <div id="spotList"></div>
 </div>
+
+<!-- ═══════════════════════════════════
+     サイトの使い方
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:2rem;">
+    <h2 class="home-section-title">📖 このサイトの使い方</h2>
+    <p class="home-section-text">
+        「旅行プラン ルーレット」は、<strong>どこに行こうか迷ったとき</strong>のヒントをくれる旅行先提案ツールです。
+        🎲 ボタンを押すだけで全国47都道府県・100スポット以上からランダムに旅行先を提案。
+        地方・カテゴリ（歴史、自然、グルメ、温泉など）・季節でフィルタリングすることで、
+        「春に東北で温泉」「夏に沖縄でアウトドア」のような希望に合わせた提案も可能です。
+        気に入ったスポットはじゃらんnetで周辺ホテルを検索して、旅行計画を完成させましょう！
+    </p>
+    <div class="how-to-steps">
+        <div class="step-item"><span class="step-num">1</span><span>地方・カテゴリ・季節でフィルター設定</span></div>
+        <div class="step-item"><span class="step-num">2</span><span>🎲 ボタンでランダム提案を実行</span></div>
+        <div class="step-item"><span class="step-num">3</span><span>気に入ったスポットのホテルを検索</span></div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     今月のおすすめスポット
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">
+        {% if current_season == '春' %}🌸{% elif current_season == '夏' %}☀️{% elif current_season == '秋' %}🍁{% else %}❄️{% endif %}
+        今の季節（{{ current_season }}）のおすすめスポット
+    </h2>
+    <p class="home-section-text">{{ current_month }}月に訪れるのにおすすめな、全国各地のスポットをピックアップしました。</p>
+    <div class="recommended-grid">
+        {% for s in recommended_spots %}
+        <a href="/spots/{{ s.id }}" class="rec-card">
+            <div class="rec-region">{{ s.region }}地方</div>
+            <div class="rec-name">{{ s.name }}</div>
+            <div class="rec-pref">📍 {{ s.pref }}</div>
+            <div class="rec-tags">
+                {% for cat in s.category[:2] %}
+                <span class="nearby-tag">{{ category_emoji.get(cat, '') }} {{ cat }}</span>
+                {% endfor %}
+            </div>
+            <p class="rec-desc">{{ s.desc[:60] }}{% if s.desc|length > 60 %}…{% endif %}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     カテゴリ別人気スポット
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">🏷️ カテゴリ別スポット</h2>
+    <p class="home-section-text">興味のあるカテゴリから旅行先を探してみましょう。</p>
+    <div class="category-feature-grid">
+        {% for cat, s in category_featured.items() %}
+        <a href="/spots/category/{{ cat | urlencode }}" class="cat-feature-card">
+            <div class="cat-feature-icon">{{ category_emoji.get(cat, '🗾') }}</div>
+            <div class="cat-feature-name">{{ cat }}</div>
+            <div class="cat-feature-example">例: {{ s.name }}</div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     地方別一覧リンク
+     ═══════════════════════════════════ -->
+<section class="home-section content-card" style="margin-top:1.5rem;">
+    <h2 class="home-section-title">🗾 地方別スポット一覧</h2>
+    <div class="region-nav-grid">
+        {% for r in ['北海道', '東北', '関東', '中部', '近畿', '中国', '四国', '九州', '沖縄'] %}
+        <a href="/spots/region/{{ r | urlencode }}" class="region-nav-btn">{{ r }}</a>
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
 
 {% block scripts %}
@@ -243,6 +318,7 @@ function buildSpotCard(spot) {
         <div class="spot-actions">
             ${buildLinkButtons(spot.links)}
             <a href="${spot.map_url}" target="_blank" rel="noopener noreferrer" class="link-btn map-btn">🗺️ Googleマップ</a>
+            ${spot.spot_url ? `<a href="${spot.spot_url}" class="link-btn detail-btn">📄 詳細ページ</a>` : ''}
         </div>
         <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow" target="_blank" class="jalan-btn">
             🏨 周辺のホテルを探す（じゃらん）
@@ -395,6 +471,7 @@ function buildAccordionItem(spot) {
             <div class="accordion-actions">
                 ${buildLinkButtons(spot.links)}
                 <a href="${spot.map_url}" target="_blank" rel="noopener noreferrer" class="link-btn map-btn">🗺️ Googleマップ</a>
+                ${spot.spot_url ? `<a href="${spot.spot_url}" class="link-btn detail-btn">📄 詳細ページ</a>` : ''}
             </div>
             <a href="https://px.a8.net/svt/ejp?a8mat=4B1PLQ+1SCD6+14CS+61RI9" rel="nofollow" target="_blank" class="jalan-btn">
                 🏨 周辺のホテルを探す（じゃらん）
