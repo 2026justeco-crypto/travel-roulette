@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}スポット追加 | 管理{% endblock %}
+
+{% block content %}
+<div class="content-card" style="max-width:680px; margin:2rem auto;">
+    <h1 style="font-size:1.4rem; margin-bottom:1.5rem;">🗾 スポット追加</h1>
+
+    {% if error %}
+    <p class="admin-msg admin-msg--err">{{ error }}</p>
+    {% endif %}
+
+    {% if success %}
+    <p class="admin-msg admin-msg--ok">
+        ✓ スポットを追加しました！
+        <a href="/spots/{{ new_id }}">確認する →</a>
+    </p>
+    {% endif %}
+
+    <form method="POST" action="/admin/spots/new?secret={{ secret }}" class="admin-form">
+        <input type="hidden" name="secret" value="{{ secret }}">
+
+        <div class="admin-section">
+            <h2 class="admin-section-title">基本情報</h2>
+
+            <label class="admin-label">スポット名 <span class="required">必須</span></label>
+            <input class="admin-input" type="text" name="name" maxlength="60"
+                placeholder="例：函館山・五稜郭" required>
+
+            <label class="admin-label">都道府県 <span class="required">必須</span></label>
+            <input class="admin-input" type="text" name="pref" maxlength="40"
+                placeholder="例：北海道 函館市　または　京都府 京都市" required>
+
+            <label class="admin-label">地方 <span class="required">必須</span></label>
+            <select class="admin-input" name="region" required>
+                <option value="">-- 選択 --</option>
+                {% for r in regions %}
+                <option value="{{ r }}">{{ r }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="admin-section-title">説明・見どころ</h2>
+
+            <label class="admin-label">説明文 <span class="required">必須</span></label>
+            <textarea class="admin-input admin-textarea" name="desc" rows="4"
+                placeholder="スポットの紹介文（1〜3文程度）" required></textarea>
+
+            <label class="admin-label">見どころ（1行1項目）</label>
+            <textarea class="admin-input admin-textarea" name="highlights" rows="4"
+                placeholder="例：&#10;函館山夜景&#10;五稜郭タワー&#10;元町洋館街"></textarea>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="admin-section-title">カテゴリ <span class="required">必須（1つ以上）</span></h2>
+            <div class="admin-checks">
+                {% for cat in categories %}
+                <label class="admin-check-label">
+                    <input type="checkbox" name="category" value="{{ cat }}"> {{ cat }}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="admin-section-title">おすすめ季節</h2>
+            <div class="admin-checks">
+                {% for s in seasons %}
+                <label class="admin-check-label">
+                    <input type="checkbox" name="seasons" value="{{ s }}"> {{ s }}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="admin-section-title">公式リンク（任意）</h2>
+            <label class="admin-label">リンク名</label>
+            <input class="admin-input" type="text" name="link_label" maxlength="30"
+                placeholder="例：○○市観光情報">
+            <label class="admin-label">URL</label>
+            <input class="admin-input" type="url" name="link_url"
+                placeholder="https://...">
+        </div>
+
+        <button type="submit" class="admin-submit-btn">追加する</button>
+    </form>
+</div>
+{% endblock %}

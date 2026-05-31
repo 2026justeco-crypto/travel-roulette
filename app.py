@@ -4,6 +4,7 @@ import hmac
 import os
 import random
 import urllib.parse
+import uuid as uuid_lib
 
 from dotenv import load_dotenv
 from flask import Flask, abort, jsonify, render_template, request
@@ -531,7 +532,7 @@ def _make_delete_token(post_id: int, created_at: str) -> str:
 def get_posts(spot_id):
     res = (
         _supabase.table("posts")
-        .select("id, content, created_at")
+        .select("id, content, created_at, photo_url")
         .eq("spot_id", spot_id)
         .order("created_at", desc=True)
         .limit(20)
@@ -542,9 +543,17 @@ def get_posts(spot_id):
 
 @app.route("/api/posts", methods=["POST"])
 def create_post():
-    data = request.get_json(silent=True) or {}
-    spot_id = data.get("spot_id")
-    content = (data.get("content") or "").strip()
+    is_multipart = request.content_type and "multipart" in request.content_type
+    if is_multipart:
+        sid = request.form.get("spot_id", "")
+        spot_id = int(sid) if sid.isdigit() else None
+        content = (request.form.get("content") or "").strip()
+        photo_file = request.files.get("photo")
+    else:
+        data = request.get_json(silent=True) or {}
+        spot_id = data.get("spot_id")
+        content = (data.get("content") or "").strip()
+        photo_file = None
 
     if not spot_id or not content:
         return jsonify({"error": "必須項目が不足しています"}), 400
@@ -565,12 +574,28 @@ def create_post():
     if (count_res.count or 0) >= 5:
         return jsonify({"error": "1日の投稿上限（5件）に達しました。明日またお試しください。"}), 429
 
-    result = _supabase.table("posts").insert({
-        "spot_id": spot_id,
-        "content": content,
-        "ip_hash": ip_hash,
-    }).execute()
+    # 写真アップロード（失敗してもテキスト投稿は続行）
+    photo_url = None
+    if photo_file and photo_file.filename:
+        ext = photo_file.filename.rsplit(".", 1)[-1].lower() if "." in photo_file.filename else ""
+        if ext in {"jpg", "jpeg", "png", "webp"}:
+            file_data = photo_file.read()
+            if len(file_data) <= 5 * 1024 * 1024:
+                try:
+                    path = f"posts/{uuid_lib.uuid4()}.{ext}"
+                    _supabase.storage.from_("post-photos").upload(
+                        path, file_data,
+                        {"content-type": photo_file.content_type or f"image/{ext}"}
+                    )
+                    photo_url = _supabase.storage.from_("post-photos").get_public_url(path)
+                except Exception:
+                    pass
 
+    row = {"spot_id": spot_id, "content": content, "ip_hash": ip_hash}
+    if photo_url:
+        row["photo_url"] = photo_url
+
+    result = _supabase.table("posts").insert(row).execute()
     post = result.data[0]
     token = _make_delete_token(post["id"], post["created_at"])
     return jsonify({"status": "ok", "id": post["id"], "created_at": post["created_at"], "delete_token": token})
@@ -641,6 +666,72 @@ def admin_refresh_spots():
         abort(403)
     _load_spots()
     return jsonify({"status": "ok", "count": len(SPOTS)})
+
+
+# ─────────────────────────────────────────────
+#  管理: スポット追加フォーム
+# ─────────────────────────────────────────────
+_ADMIN_CATEGORIES = ["歴史・文化", "自然・絶景", "アウトドア", "グルメ", "温泉・癒し", "世界遺産", "夜景"]
+_ADMIN_SEASONS    = ["春", "夏", "秋", "冬"]
+
+
+def _check_admin():
+    secret = request.args.get("secret") or request.form.get("secret", "")
+    return secret == os.environ.get("ADMIN_SECRET", "")
+
+
+@app.route("/admin/spots/new", methods=["GET"])
+def admin_spot_new_form():
+    if not _check_admin():
+        abort(403)
+    return render_template("admin_spot_new.html",
+                           regions=REGION_ORDER,
+                           categories=_ADMIN_CATEGORIES,
+                           seasons=_ADMIN_SEASONS,
+                           secret=request.args.get("secret", ""))
+
+
+@app.route("/admin/spots/new", methods=["POST"])
+def admin_spot_new():
+    if not _check_admin():
+        abort(403)
+
+    secret = request.form.get("secret", "")
+    ctx = dict(regions=REGION_ORDER, categories=_ADMIN_CATEGORIES,
+               seasons=_ADMIN_SEASONS, secret=secret)
+
+    name        = request.form.get("name", "").strip()
+    pref        = request.form.get("pref", "").strip()
+    region      = request.form.get("region", "").strip()
+    desc        = request.form.get("desc", "").strip()
+    highlights  = [h.strip() for h in request.form.get("highlights", "").splitlines() if h.strip()]
+    category    = request.form.getlist("category")
+    seasons_sel = request.form.getlist("seasons")
+    link_label  = request.form.get("link_label", "").strip()
+    link_url    = request.form.get("link_url", "").strip()
+
+    if not all([name, pref, region, desc, category]):
+        return render_template("admin_spot_new.html", error="必須項目を入力してください", **ctx)
+
+    links = [{"label": link_label, "url": link_url}] if link_label and link_url else []
+
+    result = _supabase.table("spots").insert({
+        "name":               name,
+        "pref":               pref,
+        "region":             region,
+        "description":        desc,
+        "highlights":         highlights,
+        "category":           category,
+        "seasons":            seasons_sel,
+        "links":              links,
+        "nearby":             [],
+        "rainy_alternatives": [],
+    }).execute()
+
+    new_id = result.data[0]["id"]
+    _load_spots()
+
+    return render_template("admin_spot_new.html", success=True, new_id=new_id, **ctx)
 
 
 if __name__ == "__main__":
