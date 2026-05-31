@@ -517,13 +517,30 @@ def _make_delete_token(post_id: int, created_at: str) -> str:
 def get_posts(spot_id):
     res = (
         _supabase.table("posts")
-        .select("id, content, created_at, photo_url")
+        .select("id, content, created_at, photo_urls")
         .eq("spot_id", spot_id)
         .order("created_at", desc=True)
         .limit(20)
         .execute()
     )
     return jsonify(res.data or [])
+
+
+def _upload_photo(file) -> str | None:
+    ext = file.filename.rsplit(".", 1)[-1].lower() if "." in file.filename else ""
+    if ext not in {"jpg", "jpeg", "png", "webp"}:
+        return None
+    data = file.read()
+    if len(data) > 5 * 1024 * 1024:
+        return None
+    try:
+        path = f"posts/{uuid_lib.uuid4()}.{ext}"
+        _supabase.storage.from_("post-photos").upload(
+            path, data, {"content-type": file.content_type or f"image/{ext}"}
+        )
+        return _supabase.storage.from_("post-photos").get_public_url(path)
+    except Exception:
+        return None
 
 
 @app.route("/api/posts", methods=["POST"])
@@ -533,12 +550,12 @@ def create_post():
         sid = request.form.get("spot_id", "")
         spot_id = int(sid) if sid.isdigit() else None
         content = (request.form.get("content") or "").strip()
-        photo_file = request.files.get("photo")
+        photo_files = request.files.getlist("photos")[:4]
     else:
         data = request.get_json(silent=True) or {}
         spot_id = data.get("spot_id")
         content = (data.get("content") or "").strip()
-        photo_file = None
+        photo_files = []
 
     if not spot_id or not content:
         return jsonify({"error": "必須項目が不足しています"}), 400
@@ -559,28 +576,20 @@ def create_post():
     if (count_res.count or 0) >= 5:
         return jsonify({"error": "1日の投稿上限（5件）に達しました。明日またお試しください。"}), 429
 
-    # 写真アップロード（失敗してもテキスト投稿は続行）
-    photo_url = None
-    if photo_file and photo_file.filename:
-        ext = photo_file.filename.rsplit(".", 1)[-1].lower() if "." in photo_file.filename else ""
-        if ext in {"jpg", "jpeg", "png", "webp"}:
-            file_data = photo_file.read()
-            if len(file_data) <= 5 * 1024 * 1024:
-                try:
-                    path = f"posts/{uuid_lib.uuid4()}.{ext}"
-                    _supabase.storage.from_("post-photos").upload(
-                        path, file_data,
-                        {"content-type": photo_file.content_type or f"image/{ext}"}
-                    )
-                    photo_url = _supabase.storage.from_("post-photos").get_public_url(path)
-                except Exception:
-                    pass
+    photo_urls = []
+    for f in photo_files:
+        if f and f.filename:
+            url = _upload_photo(f)
+            if url:
+                photo_urls.append(url)
 
-    row = {"spot_id": spot_id, "content": content, "ip_hash": ip_hash}
-    if photo_url:
-        row["photo_url"] = photo_url
+    result = _supabase.table("posts").insert({
+        "spot_id": spot_id,
+        "content": content,
+        "ip_hash": ip_hash,
+        "photo_urls": photo_urls,
+    }).execute()
 
-    result = _supabase.table("posts").insert(row).execute()
     post = result.data[0]
     token = _make_delete_token(post["id"], post["created_at"])
     return jsonify({"status": "ok", "id": post["id"], "created_at": post["created_at"], "delete_token": token})
@@ -596,20 +605,7 @@ def delete_post(post_id):
     if not res.data:
         return jsonify({"error": "投稿が見つかりません"}), 404
 
-    post = res.data[0]
-    created_at_str = post["created_at"]
-
-    # 10分以内チェック
-    try:
-        created_at = datetime.datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
-        now = datetime.datetime.now(datetime.timezone.utc)
-        if (now - created_at).total_seconds() > 600:
-            return jsonify({"error": "投稿から10分以上経過しているため削除できません"}), 403
-    except Exception:
-        return jsonify({"error": "日時の解析に失敗しました"}), 500
-
-    # トークン検証
-    expected = _make_delete_token(post_id, created_at_str)
+    expected = _make_delete_token(post_id, res.data[0]["created_at"])
     if not hmac.compare_digest(token, expected):
         return jsonify({"error": "削除権限がありません"}), 403
 
