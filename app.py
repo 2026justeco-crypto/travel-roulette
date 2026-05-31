@@ -1,5 +1,6 @@
 import datetime
 import hashlib
+import hmac
 import os
 import random
 import urllib.parse
@@ -520,6 +521,12 @@ def api_spots():
 # ─────────────────────────────────────────────
 #  API: 旅の声（匿名投稿）
 # ─────────────────────────────────────────────
+def _make_delete_token(post_id: int, created_at: str) -> str:
+    key = os.environ.get("ADMIN_SECRET", "fallback").encode()
+    msg = f"{post_id}:{created_at}".encode()
+    return hmac.new(key, msg, "sha256").hexdigest()[:24]
+
+
 @app.route("/api/posts/<int:spot_id>", methods=["GET"])
 def get_posts(spot_id):
     res = (
@@ -558,12 +565,45 @@ def create_post():
     if (count_res.count or 0) >= 5:
         return jsonify({"error": "1日の投稿上限（5件）に達しました。明日またお試しください。"}), 429
 
-    _supabase.table("posts").insert({
+    result = _supabase.table("posts").insert({
         "spot_id": spot_id,
         "content": content,
         "ip_hash": ip_hash,
     }).execute()
 
+    post = result.data[0]
+    token = _make_delete_token(post["id"], post["created_at"])
+    return jsonify({"status": "ok", "id": post["id"], "created_at": post["created_at"], "delete_token": token})
+
+
+@app.route("/api/posts/<int:post_id>", methods=["DELETE"])
+def delete_post(post_id):
+    token = request.args.get("token", "")
+    if not token:
+        return jsonify({"error": "トークンが必要です"}), 400
+
+    res = _supabase.table("posts").select("id, created_at").eq("id", post_id).execute()
+    if not res.data:
+        return jsonify({"error": "投稿が見つかりません"}), 404
+
+    post = res.data[0]
+    created_at_str = post["created_at"]
+
+    # 10分以内チェック
+    try:
+        created_at = datetime.datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
+        now = datetime.datetime.now(datetime.timezone.utc)
+        if (now - created_at).total_seconds() > 600:
+            return jsonify({"error": "投稿から10分以上経過しているため削除できません"}), 403
+    except Exception:
+        return jsonify({"error": "日時の解析に失敗しました"}), 500
+
+    # トークン検証
+    expected = _make_delete_token(post_id, created_at_str)
+    if not hmac.compare_digest(token, expected):
+        return jsonify({"error": "削除権限がありません"}), 403
+
+    _supabase.table("posts").delete().eq("id", post_id).execute()
     return jsonify({"status": "ok"})
 
 

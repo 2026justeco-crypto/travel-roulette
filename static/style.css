@@ -1733,3 +1733,21 @@ a:hover {
 }
 .voices-submit-btn:hover    { background: var(--color-main-dark); }
 .voices-submit-btn:disabled { background: #aaa; cursor: default; }
+
+/* 投稿削除ボタン */
+.post-delete-btn {
+    margin-left: 0.7rem;
+    background: none;
+    border: none;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+    opacity: 0.6;
+    transition: opacity 0.15s, color 0.15s;
+}
+.post-delete-btn:hover {
+    opacity: 1;
+    color: #e74c3c;
+}

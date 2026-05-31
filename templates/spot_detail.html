@@ -318,12 +318,17 @@ async function submitPost() {
         });
         const data = await res.json();
         if (res.ok) {
-            msg.textContent = '✓ 投稿しました！';
+            // 削除トークンをlocalStorageに保存（10分間有効）
+            localStorage.setItem(`post_token_${data.id}`, JSON.stringify({
+                token: data.delete_token,
+                expires: Date.now() + 10 * 60 * 1000,
+            }));
+            msg.textContent = '✓ 投稿しました！（10分以内なら削除できます）';
             msg.className = 'voices-message voices-message--ok';
             document.getElementById('post-content').value = '';
             document.getElementById('char-count').textContent = '0';
             document.getElementById('charbar').style.width = '0';
-            setTimeout(() => { msg.textContent = ''; }, 3000);
+            setTimeout(() => { msg.textContent = ''; }, 5000);
             loadPosts();
         } else {
             msg.textContent = data.error || '投稿に失敗しました。';
@@ -350,15 +355,20 @@ async function loadPosts() {
             return;
         }
         badge.textContent = posts.length + '件';
-        feed.innerHTML = posts.map((p, i) => {
+        feed.innerHTML = posts.map((p) => {
             const av = AVATARS[p.id % AVATARS.length];
             const date = new Date(p.created_at).toLocaleDateString('ja-JP');
+            const stored = localStorage.getItem(`post_token_${p.id}`);
+            const canDelete = stored && JSON.parse(stored).expires > Date.now();
+            const deleteBtn = canDelete
+                ? `<button class="post-delete-btn" onclick="deletePost(${p.id})">🗑️ 削除</button>`
+                : '';
             return `
-<div class="voice-post">
+<div class="voice-post" id="voice-post-${p.id}">
   <div class="voice-avatar">${av}</div>
   <div class="voice-post-body">
     <p class="voice-post-text">${escapeHtml(p.content)}</p>
-    <span class="voice-post-date">${date}</span>
+    <span class="voice-post-date">${date}${deleteBtn}</span>
   </div>
 </div>`;
         }).join('');
@@ -404,6 +414,34 @@ async function submitSuggestion(e) {
     } catch {
         msg.textContent = '通信エラーが発生しました。';
         msg.className = 'voices-message voices-message--err';
+    }
+}
+
+// ── 投稿削除 ──
+async function deletePost(postId) {
+    const stored = localStorage.getItem(`post_token_${postId}`);
+    if (!stored) return;
+    const { token, expires } = JSON.parse(stored);
+    if (expires < Date.now()) {
+        alert('削除できる時間（10分）が過ぎています。');
+        return;
+    }
+    if (!confirm('この投稿を削除しますか？')) return;
+
+    const res = await fetch(`/api/posts/${postId}?token=${encodeURIComponent(token)}`, {
+        method: 'DELETE',
+    });
+    if (res.ok) {
+        localStorage.removeItem(`post_token_${postId}`);
+        document.getElementById(`voice-post-${postId}`)?.remove();
+        const feed = document.getElementById('posts-list');
+        if (!feed.querySelector('.voice-post')) {
+            feed.innerHTML = '<p class="voice-feed-empty">まだ投稿がありません。最初の一言をどうぞ！</p>';
+            document.getElementById('voices-count').textContent = '';
+        }
+    } else {
+        const data = await res.json();
+        alert(data.error || '削除に失敗しました。');
     }
 }
 
