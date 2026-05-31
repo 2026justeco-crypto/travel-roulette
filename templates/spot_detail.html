@@ -120,51 +120,60 @@
 </div>
 
 <!-- ═══════════════════════════════════
-     旅の声（匿名投稿）
+     旅の声（SNSスタイル）
      ═══════════════════════════════════ -->
 <div class="content-card" id="voices-section">
     <section class="content-section">
-        <h2>✍️ 旅の声</h2>
-        <p class="voices-lead">{{ spot.name }}を訪れた感想をひとことどうぞ。<br>匿名で投稿できます（100文字以内）。</p>
+        <div class="voices-header">
+            <h2>✍️ 旅の声</h2>
+            <span class="voices-count-badge" id="voices-count"></span>
+        </div>
 
-        <form id="post-form" class="voices-form" onsubmit="submitPost(event)">
-            <div class="voices-textarea-wrap">
-                <textarea id="post-content" class="voices-textarea" maxlength="100"
-                    placeholder="例：絶景でした！朝早く行くと空いていておすすめです。" rows="3"></textarea>
-                <span class="voices-counter"><span id="char-count">0</span> / 100</span>
+        <!-- 投稿フォーム -->
+        <div class="voice-compose">
+            <div class="voice-avatar voice-avatar--compose">🧳</div>
+            <div class="voice-compose-body">
+                <textarea id="post-content" class="voice-compose-input" maxlength="100"
+                    placeholder="{{ spot.name }}の感想をひとこと…（匿名・100文字以内）" rows="2"></textarea>
+                <div class="voice-compose-footer">
+                    <div class="voice-charbar-wrap">
+                        <div class="voice-charbar" id="charbar"></div>
+                    </div>
+                    <span class="voice-charnum" id="char-count">0</span>
+                    <button class="voice-post-btn" id="post-btn" onclick="submitPost()">投稿</button>
+                </div>
+                <p id="post-message" class="voices-message" aria-live="polite"></p>
             </div>
-            <button type="submit" class="voices-submit-btn">投稿する</button>
-            <p id="post-message" class="voices-message" aria-live="polite"></p>
-        </form>
+        </div>
 
-        <div id="posts-list" class="posts-list">
-            <p class="posts-loading">読み込み中…</p>
+        <!-- 投稿フィード -->
+        <div id="posts-list" class="voice-feed">
+            <p class="voice-feed-loading">読み込み中…</p>
         </div>
     </section>
 </div>
 
 <!-- ═══════════════════════════════════
-     スポット提案フォーム
+     スポット提案（折りたたみ式）
      ═══════════════════════════════════ -->
-<div class="content-card">
-    <section class="content-section">
-        <h2>💡 スポット提案</h2>
-        <p class="voices-lead">{{ spot.name }}の近くにあるおすすめスポットを教えてください。<br>運営者が確認し、掲載を検討します。</p>
+<div class="content-card suggest-card">
+    <button class="suggest-toggle" id="suggest-toggle" onclick="toggleSuggest()" aria-expanded="false">
+        <span class="suggest-toggle-icon">💡</span>
+        <span class="suggest-toggle-text">{{ spot.name }}の近くに知っているスポットがありますか？</span>
+        <span class="suggest-toggle-arrow" id="suggest-arrow">▼</span>
+    </button>
 
+    <div class="suggest-body" id="suggest-body" hidden>
+        <p class="voices-lead">情報を教えていただくと、掲載を検討します。</p>
         <form id="suggestion-form" class="suggestion-form" onsubmit="submitSuggestion(event)">
-            <label class="suggestion-label" for="sug-spot-name">提案するスポット名<span class="required">必須</span></label>
-            <input id="sug-spot-name" class="suggestion-input" type="text" maxlength="50" placeholder="例：○○神社、△△公園" required>
-
-            <label class="suggestion-label" for="sug-near-spot">どのスポットの近くですか<span class="required">必須</span></label>
-            <input id="sug-near-spot" class="suggestion-input" type="text" value="{{ spot.name }}" readonly>
-
-            <label class="suggestion-label" for="sug-desc">どんなスポットか一言<span class="required">必須</span></label>
-            <input id="sug-desc" class="suggestion-input" type="text" maxlength="200" placeholder="例：穴場の展望台。夕日が綺麗でした。" required>
-
-            <button type="submit" class="voices-submit-btn">提案を送る</button>
+            <input id="sug-spot-name" class="suggestion-input" type="text" maxlength="50"
+                placeholder="スポット名（例：○○神社、△△展望台）" required>
+            <input id="sug-desc" class="suggestion-input" type="text" maxlength="200"
+                placeholder="一言メモ（例：穴場の展望台。夕日が綺麗でした。）" required>
+            <button type="submit" class="voices-submit-btn">送る</button>
             <p id="sug-message" class="voices-message" aria-live="polite"></p>
         </form>
-    </section>
+    </div>
 </div>
 
 <!-- ═══════════════════════════════════
@@ -279,19 +288,28 @@
 {% block scripts %}
 <script>
 const SPOT_ID = {{ spot_id }};
+const NEAR_SPOT = {{ spot.name | tojson }};
+const AVATARS = ['🗾','✈️','🏔️','🌸','🍜','♨️','🏯','🌊','🎋','🦌'];
 
-// ── 旅の声：文字数カウンター ──
+// ── 文字数バー ──
 document.getElementById('post-content').addEventListener('input', function () {
-    document.getElementById('char-count').textContent = this.value.length;
+    const n = this.value.length;
+    document.getElementById('char-count').textContent = n;
+    const bar = document.getElementById('charbar');
+    const pct = n / 100 * 100;
+    bar.style.width = pct + '%';
+    bar.style.background = pct < 70 ? 'var(--color-main)' : pct < 90 ? '#f5a623' : '#e74c3c';
 });
 
 // ── 旅の声：投稿 ──
-async function submitPost(e) {
-    e.preventDefault();
+async function submitPost() {
     const content = document.getElementById('post-content').value.trim();
     const msg = document.getElementById('post-message');
+    const btn = document.getElementById('post-btn');
     if (!content) return;
 
+    btn.disabled = true;
+    btn.textContent = '送信中…';
     try {
         const res = await fetch('/api/posts', {
             method: 'POST',
@@ -300,10 +318,12 @@ async function submitPost(e) {
         });
         const data = await res.json();
         if (res.ok) {
-            msg.textContent = '投稿しました！ありがとうございます。';
+            msg.textContent = '✓ 投稿しました！';
             msg.className = 'voices-message voices-message--ok';
             document.getElementById('post-content').value = '';
             document.getElementById('char-count').textContent = '0';
+            document.getElementById('charbar').style.width = '0';
+            setTimeout(() => { msg.textContent = ''; }, 3000);
             loadPosts();
         } else {
             msg.textContent = data.error || '投稿に失敗しました。';
@@ -313,32 +333,55 @@ async function submitPost(e) {
         msg.textContent = '通信エラーが発生しました。';
         msg.className = 'voices-message voices-message--err';
     }
+    btn.disabled = false;
+    btn.textContent = '投稿';
 }
 
 // ── 旅の声：一覧取得 ──
 async function loadPosts() {
-    const list = document.getElementById('posts-list');
+    const feed = document.getElementById('posts-list');
+    const badge = document.getElementById('voices-count');
     try {
         const res = await fetch(`/api/posts/${SPOT_ID}`);
         const posts = await res.json();
         if (!posts.length) {
-            list.innerHTML = '<p class="posts-empty">まだ投稿がありません。最初の一言をどうぞ！</p>';
+            badge.textContent = '';
+            feed.innerHTML = '<p class="voice-feed-empty">まだ投稿がありません。最初の一言をどうぞ！</p>';
             return;
         }
-        list.innerHTML = posts.map(p => {
+        badge.textContent = posts.length + '件';
+        feed.innerHTML = posts.map((p, i) => {
+            const av = AVATARS[p.id % AVATARS.length];
             const date = new Date(p.created_at).toLocaleDateString('ja-JP');
-            return `<div class="post-item"><p class="post-content">${escapeHtml(p.content)}</p><span class="post-date">${date}</span></div>`;
+            return `
+<div class="voice-post">
+  <div class="voice-avatar">${av}</div>
+  <div class="voice-post-body">
+    <p class="voice-post-text">${escapeHtml(p.content)}</p>
+    <span class="voice-post-date">${date}</span>
+  </div>
+</div>`;
         }).join('');
     } catch {
-        list.innerHTML = '<p class="posts-empty">投稿の読み込みに失敗しました。</p>';
+        feed.innerHTML = '<p class="voice-feed-empty">読み込みに失敗しました。</p>';
     }
+}
+
+// ── スポット提案：折りたたみ ──
+function toggleSuggest() {
+    const body = document.getElementById('suggest-body');
+    const arrow = document.getElementById('suggest-arrow');
+    const btn = document.getElementById('suggest-toggle');
+    const hidden = body.hidden;
+    body.hidden = !hidden;
+    arrow.textContent = hidden ? '▲' : '▼';
+    btn.setAttribute('aria-expanded', hidden);
 }
 
 // ── スポット提案：送信 ──
 async function submitSuggestion(e) {
     e.preventDefault();
     const spot_name = document.getElementById('sug-spot-name').value.trim();
-    const near_spot = document.getElementById('sug-near-spot').value.trim();
     const desc = document.getElementById('sug-desc').value.trim();
     const msg = document.getElementById('sug-message');
 
@@ -346,15 +389,14 @@ async function submitSuggestion(e) {
         const res = await fetch('/api/suggestions', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ spot_name, near_spot, desc }),
+            body: JSON.stringify({ spot_name, near_spot: NEAR_SPOT, desc }),
         });
         const data = await res.json();
         if (res.ok) {
-            msg.textContent = '提案を送りました！ありがとうございます。';
+            msg.textContent = '✓ 提案を送りました！ありがとうございます。';
             msg.className = 'voices-message voices-message--ok';
-            document.getElementById('sug-spot-name').value = '';
-            document.getElementById('sug-desc').value = '';
-            document.getElementById('suggestion-form').querySelector('[type=submit]').disabled = true;
+            e.target.reset();
+            e.target.querySelector('[type=submit]').disabled = true;
         } else {
             msg.textContent = data.error || '送信に失敗しました。';
             msg.className = 'voices-message voices-message--err';
@@ -365,8 +407,8 @@ async function submitSuggestion(e) {
     }
 }
 
-function escapeHtml(str) {
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function escapeHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 loadPosts();
