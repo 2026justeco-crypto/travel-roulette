@@ -1,23 +1,65 @@
-from flask import Flask, render_template, request, jsonify, abort
+import datetime
+import hashlib
+import os
 import random
 import urllib.parse
-import datetime
-from data import SPOTS, ALL_REGIONS, ALL_CATEGORIES, REGION_ORDER, CATEGORY_EMOJI, SEASON_EMOJI
+
+from dotenv import load_dotenv
+from flask import Flask, abort, jsonify, render_template, request
+from supabase import create_client
+
+load_dotenv()
 
 app = Flask(__name__)
 
 # ─────────────────────────────────────────────
-#  起動時: 各スポットに ID を付与
+#  Supabase クライアント
 # ─────────────────────────────────────────────
-for _i, _s in enumerate(SPOTS):
-    _s["id"] = _i
+_supabase = create_client(
+    os.environ["SUPABASE_URL"],
+    os.environ["SUPABASE_SERVICE_KEY"],
+)
+
+# ─────────────────────────────────────────────
+#  定数（data.py から移動）
+# ─────────────────────────────────────────────
+REGION_ORDER = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州", "沖縄"]
+ALL_REGIONS = ["全国"] + REGION_ORDER
+SEASON_EMOJI = {"春": "🌸", "夏": "☀️", "秋": "🍁", "冬": "❄️"}
+CATEGORY_EMOJI = {
+    "歴史・文化": "🏯",
+    "自然・絶景": "🏔️",
+    "アウトドア": "🥾",
+    "グルメ": "🍜",
+    "温泉・癒し": "♨️",
+    "世界遺産": "🌏",
+    "夜景": "🌃",
+}
+
+# ─────────────────────────────────────────────
+#  スポットキャッシュ（起動時に全件ロード）
+# ─────────────────────────────────────────────
+SPOTS: list[dict] = []
+ALL_CATEGORIES: list[str] = []
+
+
+def _load_spots() -> None:
+    global SPOTS, ALL_CATEGORIES
+    res = _supabase.table("spots").select("*").order("id").execute()
+    spots = res.data or []
+    for s in spots:
+        s["desc"] = s.pop("description", "")
+    SPOTS = spots
+    ALL_CATEGORIES = sorted({cat for s in spots for cat in s.get("category", [])})
+
+
+_load_spots()
 
 
 # ─────────────────────────────────────────────
 #  ヘルパー: 都道府県名（短縮）を取得
 # ─────────────────────────────────────────────
 def get_pref_short(pref):
-    """'北海道 函館市' → '北海道' のように最初のトークンを返す"""
     return pref.split()[0] if " " in pref else pref.split("・")[0]
 
 
@@ -50,26 +92,19 @@ def generate_extended_desc(spot):
         "夜景": "幻想的な夜景が楽しめる",
     }
 
-    paragraphs = []
+    paragraphs = [desc]
 
-    # 1. 基本説明文
-    paragraphs.append(desc)
-
-    # 2. 見どころ詳細
     if highlights:
-        hl_list = highlights[:4]
-        hl_str = " / ".join(hl_list)
+        hl_str = " / ".join(highlights[:4])
         flavor = cat_flavor.get(categories[0], "多くの旅行者を惹きつける") if categories else "人気の"
-        para2 = (
+        paragraphs.append(
             f"主な見どころには「{hl_str}」などがあります。"
             f"{name}は{flavor}スポットとして{pref_short}を代表する観光地のひとつであり、"
             f"国内外から年間を通じて多くの旅行者が訪れます。"
             f"旅行の目的に合わせてさまざまな楽しみ方ができるため、"
             f"初めての方にも、リピーターにも満足度の高い場所として知られています。"
         )
-        paragraphs.append(para2)
 
-    # 3. おすすめシーズン
     if seasons:
         season_strs = [season_label.get(s, s) for s in seasons]
         if len(seasons) >= 4:
@@ -85,8 +120,7 @@ def generate_extended_desc(spot):
             )
         else:
             para3 = (
-                f"おすすめの訪問シーズンは"
-                f"{'と'.join(season_strs)}です。"
+                f"おすすめの訪問シーズンは{'と'.join(season_strs)}です。"
                 f"訪れる時期によって表情を変えるこの場所は、"
                 f"何度でも新たな発見がある観光地です。"
             )
@@ -96,25 +130,20 @@ def generate_extended_desc(spot):
         )
         paragraphs.append(para3)
 
-    # 4. アクセス情報
-    para4 = (
+    paragraphs.append(
         f"【アクセス情報】{pref_short}に位置する{name}へは、"
         f"最寄りの鉄道駅やバス停からのアクセスが一般的です。"
         f"マイカーの場合は現地近くに駐車場が用意されていることが多いですが、"
         f"繁忙期・連休中は混雑が予想されるため早めの出発をお勧めします。"
         f"詳細な経路や所要時間はGoogleマップ等でご確認いただけます。"
     )
-    paragraphs.append(para4)
-
-    # 5. 周辺宿泊・グルメ
-    para5 = (
+    paragraphs.append(
         f"【周辺の楽しみ方】旅をより充実させるために、"
         f"{pref_short}ならではのグルメや宿泊施設もぜひお楽しみください。"
         f"じゃらんnetでは{pref_short}周辺のホテル・旅館を手軽に検索・予約することができます。"
         f"観光スポットの近くに泊まることで、早朝・夕暮れ時の特別な景色を体験できることもあります。"
         f"地元の飲食店や土産物店にも立ち寄り、旅の記念に残る思い出を作ってください。"
     )
-    paragraphs.append(para5)
 
     return "\n\n".join(paragraphs)
 
@@ -131,10 +160,8 @@ def get_recommended_spots(n=5):
         9: "秋", 10: "秋", 11: "秋",
     }
     current_season = season_map.get(month, "春")
-
     season_spots = [s for s in SPOTS if current_season in s.get("seasons", [])]
 
-    # 地方ごとに1件ずつ
     regions_covered = set()
     recommended = []
     for s in season_spots:
@@ -142,7 +169,6 @@ def get_recommended_spots(n=5):
             recommended.append(s)
             regions_covered.add(s["region"])
 
-    # 5件に満たない場合は補填
     if len(recommended) < n:
         for s in season_spots:
             if s not in recommended and len(recommended) < n:
@@ -322,19 +348,17 @@ def ads_txt():
 # ─────────────────────────────────────────────
 @app.route("/spots/<int:spot_id>")
 def spot_detail(spot_id):
-    if spot_id < 0 or spot_id >= len(SPOTS):
+    spot = next((s for s in SPOTS if s["id"] == spot_id), None)
+    if spot is None:
         abort(404)
 
-    spot = SPOTS[spot_id]
     pref_short = get_pref_short(spot["pref"])
 
-    # 関連スポット（同都道府県）
     related_pref = [
         s for s in SPOTS
         if get_pref_short(s["pref"]) == pref_short and s["id"] != spot_id
     ][:4]
 
-    # 関連スポット（同カテゴリ）
     related_pref_ids = {s["id"] for s in related_pref}
     related_cat = [
         s for s in SPOTS
@@ -345,7 +369,6 @@ def spot_detail(spot_id):
 
     map_url = f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(spot['name'] + ' ' + spot['pref'])}"
     jalan_url = "https://www.jalan.net/yad/?CenS=1&keyword=" + urllib.parse.quote(pref_short)
-
     nearby_details = [s for s in SPOTS if s["name"] in spot.get("nearby", [])]
     extended_desc = generate_extended_desc(spot)
 
@@ -446,7 +469,7 @@ def spots_category(cat_name):
 
 
 # ─────────────────────────────────────────────
-#  API エンドポイント
+#  API: ランダム・スポット検索
 # ─────────────────────────────────────────────
 @app.route("/api/random")
 def api_random():
@@ -492,6 +515,92 @@ def api_spots():
         result[region_name] = [build_spot_json(s) for s in spots]
 
     return jsonify({"regions": result, "total": len(pool)})
+
+
+# ─────────────────────────────────────────────
+#  API: 旅の声（匿名投稿）
+# ─────────────────────────────────────────────
+@app.route("/api/posts/<int:spot_id>", methods=["GET"])
+def get_posts(spot_id):
+    res = (
+        _supabase.table("posts")
+        .select("id, content, created_at")
+        .eq("spot_id", spot_id)
+        .order("created_at", desc=True)
+        .limit(20)
+        .execute()
+    )
+    return jsonify(res.data or [])
+
+
+@app.route("/api/posts", methods=["POST"])
+def create_post():
+    data = request.get_json(silent=True) or {}
+    spot_id = data.get("spot_id")
+    content = (data.get("content") or "").strip()
+
+    if not spot_id or not content:
+        return jsonify({"error": "必須項目が不足しています"}), 400
+    if len(content) > 100:
+        return jsonify({"error": "100文字以内で入力してください"}), 400
+
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr or "").split(",")[0].strip()
+    ip_hash = hashlib.sha256(ip.encode()).hexdigest()
+
+    since = (datetime.datetime.utcnow() - datetime.timedelta(days=1)).isoformat()
+    count_res = (
+        _supabase.table("posts")
+        .select("id", count="exact")
+        .eq("ip_hash", ip_hash)
+        .gte("created_at", since)
+        .execute()
+    )
+    if (count_res.count or 0) >= 5:
+        return jsonify({"error": "1日の投稿上限（5件）に達しました。明日またお試しください。"}), 429
+
+    _supabase.table("posts").insert({
+        "spot_id": spot_id,
+        "content": content,
+        "ip_hash": ip_hash,
+    }).execute()
+
+    return jsonify({"status": "ok"})
+
+
+# ─────────────────────────────────────────────
+#  API: スポット提案フォーム
+# ─────────────────────────────────────────────
+@app.route("/api/suggestions", methods=["POST"])
+def create_suggestion():
+    data = request.get_json(silent=True) or {}
+    spot_name = (data.get("spot_name") or "").strip()
+    near_spot = (data.get("near_spot") or "").strip()
+    desc = (data.get("desc") or "").strip()
+
+    if not spot_name or not near_spot or not desc:
+        return jsonify({"error": "必須項目が不足しています"}), 400
+    if len(spot_name) > 50 or len(near_spot) > 50 or len(desc) > 200:
+        return jsonify({"error": "入力が長すぎます"}), 400
+
+    _supabase.table("suggestions").insert({
+        "spot_name": spot_name,
+        "near_spot": near_spot,
+        "description": desc,
+    }).execute()
+
+    return jsonify({"status": "ok"})
+
+
+# ─────────────────────────────────────────────
+#  管理: スポットキャッシュ手動リフレッシュ
+# ─────────────────────────────────────────────
+@app.route("/admin/refresh-spots")
+def admin_refresh_spots():
+    secret = request.args.get("secret", "")
+    if not secret or secret != os.environ.get("ADMIN_SECRET", ""):
+        abort(403)
+    _load_spots()
+    return jsonify({"status": "ok", "count": len(SPOTS)})
 
 
 if __name__ == "__main__":
